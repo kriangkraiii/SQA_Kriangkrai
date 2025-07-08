@@ -5,42 +5,42 @@ public class RomanNumeralsTest {
 
     RomanNumerals romanNumerals = new RomanNumerals();
 
-    // 1) Single digit
+    // 1) ตัวเลขหลักเดียว
     @Test
     void testSingleDigit() {
         assertEquals(1, romanNumerals.convertRomanNumToInt("I"));
-        assertEquals(5, romanNumerals.convertRomanNumToInt("V"));
+        assertEquals(5, romanNumerals.convertRomanNumToInt("V"));XX
     }
 
-    // 2) Two digits – first < second
+    // 2) ตัวเลขสองหลัก – หลักแรกมีค่าน้อยกว่าหลักที่สอง
     @Test
     void testTwoDigitsFirstSmaller() {
         assertEquals(4, romanNumerals.convertRomanNumToInt("IV"));
         assertEquals(9, romanNumerals.convertRomanNumToInt("IX"));
     }
 
-    // 3) Two digits – first > second
+    // 3) ตัวเลขสองหลัก – หลักแรกมีค่ามากกว่าหลักที่สอง
     @Test
     void testTwoDigitsFirstLarger() {
         assertEquals(6, romanNumerals.convertRomanNumToInt("VI"));
         assertEquals(101, romanNumerals.convertRomanNumToInt("CI"));
     }
 
-    // 4) Two digits – same number
+    // 4) ตัวเลขสองหลัก – ตัวเลขเหมือนกันทั้งสองหลัก
     @Test
     void testTwoDigitsSameNumber() {
         assertEquals(2, romanNumerals.convertRomanNumToInt("II"));
         assertEquals(20, romanNumerals.convertRomanNumToInt("XX"));
     }
 
-    // 5) Multiple digits – same number
+    // 5) ตัวเลขหลายหลัก – ตัวเลขเหมือนกันทุกหลัก
     @Test
     void testMultipleDigitsSameNumber() {
         assertEquals(3, romanNumerals.convertRomanNumToInt("III"));
         assertEquals(30, romanNumerals.convertRomanNumToInt("XXX"));
     }
 
-    // 6) Multiple digits – first digit is larger than the rest
+    // 6) ตัวเลขหลายหลัก – หลักแรกมีค่ามากกว่าหลักอื่นๆ
     @Test
     void testMultipleDigitsFirstLarger() {
         assertEquals(26, romanNumerals.convertRomanNumToInt("XXVI"));
@@ -48,7 +48,7 @@ public class RomanNumeralsTest {
         assertEquals(67, romanNumerals.convertRomanNumToInt("LXVII"));
     }
 
-    // 7) Multiple digits – first digit is largest, rest is combination
+    // 7) ตัวเลขหลายหลัก – หลักแรกมีค่ามากที่สุด ที่เหลือเป็นการรวมกันของค่าต่างๆ
     @Test
     void testMultipleDigitsFirstLargestCombination() {
         assertEquals(74, romanNumerals.convertRomanNumToInt("LXXIV"));
@@ -58,18 +58,19 @@ public class RomanNumeralsTest {
     }
 
     // Negative Test Scenarios
+    //ทดสอบกรณีไม่ใช่เลขโรมัน
     @Test
     void testNotRomanNumeral() {
         assertThrows(NullPointerException.class, () -> romanNumerals.convertRomanNumToInt("J"));
         assertThrows(NullPointerException.class, () -> romanNumerals.convertRomanNumToInt("K"));
     }
-
+    //ทดสอบกรณีการซ้ำของตัวอักษรผิดกฏ
     @Test
     void testWrongRepeatingDigits() {
         assertThrows(NullPointerException.class, () -> romanNumerals.convertRomanNumToInt("VV"));
         assertThrows(NullPointerException.class, () -> romanNumerals.convertRomanNumToInt("LL"));
     }
-
+    //ทดสอบกรณีมีการซ้ำของตัวอักษรเดียวกันเกินสามตัว
     @Test
     void testMoreThanThreeRepeatingDigits() {
         assertThrows(NullPointerException.class, () -> romanNumerals.convertRomanNumToInt("XXXX"));
