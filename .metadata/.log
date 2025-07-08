@@ -1,0 +1,791 @@
+!SESSION 2025-07-08 14:18:08.442 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_TH
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/kriangkrai/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.java.product -keyring /Users/kriangkrai/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-08 14:18:09.399
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-07-08 14:18:09.516
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (1322) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-08 14:18:43.181
+!MESSAGE Logback config file: /Users/kriangkrai/eclipse-workspace/SQA/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-07-08 14:18:43.303
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-08 14:18:43.303
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-07-08 14:18:43.423
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-08 14:18:43.423
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-07-08 14:18:43.443
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-08 14:18:43.443
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2025-07-08 14:18:43.680
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2025-07-08 14:18:43.686
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-07-08 14:18:44.033
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:191)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:124)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:843)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:331)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:309)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:104)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:79)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createRecentWorkspacesComposite(LaunchTabMainPage.java:92)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createContents(LaunchTabMainPage.java:55)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createPages(LaunchTabFactory.java:40)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createTabArea(LaunchTabFactory.java:34)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:464)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:460)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:335)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:328)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:175)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-07-08 14:18:44.041
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:191)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:124)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:843)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:331)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:309)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:104)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:79)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createWorkspaceNameControl(WorkspaceControl.java:117)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createControl(WorkspaceControl.java:43)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspacesTabFactory.createTabArea(WorkspacesTabFactory.java:85)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:464)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:460)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:335)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:328)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:175)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-07-08 14:18:44.042
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:191)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:124)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:843)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:331)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:309)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:104)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:79)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createWorkspaceNameControl(WorkspaceControl.java:117)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createControl(WorkspaceControl.java:43)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspacesTabFactory.createTabArea(WorkspacesTabFactory.java:85)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:464)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:460)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:335)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:328)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:175)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-07-08 14:18:44.043
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:191)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:124)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:783)
+	at org.eclipse.jface.resource.URLImageDescriptor._createImage(URLImageDescriptor.java:299)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:256)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:331)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:309)
+	at com.genuitec.eclipse.startup.dialogs.tabs.RecentTabFactory.createTabArea(RecentTabFactory.java:92)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:464)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:460)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:335)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:328)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:175)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-08 14:18:46.171
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-08 14:18:46.369
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2025-07-08 14:18:46.672
+!MESSAGE Authorization Server started successfuly
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-08 14:18:47.124
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.335.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-08 14:18:47.247
+!MESSAGE [Info]	[certificates] Removed 9 expired certificates
+!SESSION 2025-07-08 14:19:02.463 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_TH
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/kriangkrai/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.java.product -keyring /Users/kriangkrai/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-08 14:19:03.188
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-07-08 14:19:03.307
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (1322) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-08 14:19:57.604
+!MESSAGE Logback config file: /Users/kriangkrai/eclipse-workspace/SQA/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-07-08 14:19:57.697
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-08 14:19:57.697
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-07-08 14:19:57.797
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-08 14:19:57.797
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-08 14:19:59.985
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-08 14:20:00.147
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2025-07-08 14:20:00.440
+!MESSAGE Authorization Server started successfuly
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-08 14:20:00.869
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.335.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-08 14:20:00.982
+!MESSAGE [Info]	[certificates] Removed 9 expired certificates
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2025-07-08 14:20:54.805
+!MESSAGE Unexpected interrupt while waiting on ECF browse request
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1133)
+	at java.base/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:276)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:85)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:281)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:427)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:364)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.getLastModified(CacheManager.java:287)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:198)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.getLocalFile(CompositeMetadataRepositoryFactory.java:81)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:105)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:65)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:849)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:126)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:447)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:230)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:519)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:112)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$10(MarketplaceCatalog.java:334)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2025-07-08 14:21:54.370
+!MESSAGE Unexpected interrupt while waiting on ECF browse request
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1133)
+	at java.base/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:276)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileInfoReader.getLastModified(FileInfoReader.java:85)
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.getLastModified(RepositoryTransport.java:281)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.delegateGetLastModified(CachingTransport.java:427)
+	at org.eclipse.oomph.p2.internal.core.CachingTransport.getLastModified(CachingTransport.java:364)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.getLastModified(CacheManager.java:287)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:198)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.getLocalFile(SimpleMetadataRepositoryFactory.java:73)
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:93)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:65)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:849)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:126)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:447)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:230)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:519)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:112)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:165)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:93)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:131)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:65)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:849)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:126)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:447)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:230)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:519)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:112)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$10(MarketplaceCatalog.java:334)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+!ENTRY org.eclipse.epp.mpc.core 1 0 2025-07-08 14:22:00.351
+!MESSAGE Cannot parse XML at URL https://marketplace.eclipse.org/api/p/search/apachesolr_search/git?client=org.eclipse.epp.mpc.core&os=macosx&platform.version=4.36: Invalid response content: Content is not allowed in prolog.
+!STACK 1
+org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: Content is not allowed in prolog.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:491)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:403)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:302)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:327)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:302)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:451)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:521)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:480)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$5(MarketplaceViewer.java:644)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:123)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1252)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+Contains: Received response begins with:
+
+1: The website encountered an unexpected error. Try again later.<br />
+
+!SUBENTRY 1 org.eclipse.epp.mpc.core 1 0 2025-07-08 14:22:00.352
+!MESSAGE Invalid response content: Content is not allowed in prolog.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1252)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:491)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:403)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:302)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:327)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:302)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:451)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:521)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:480)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$5(MarketplaceViewer.java:644)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:123)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-07-08 14:22:00.352
+!MESSAGE Received response begins with:
+
+1: The website encountered an unexpected error. Try again later.<br />
+
+!SUBENTRY 1 org.eclipse.epp.mpc.core 1 0 2025-07-08 14:22:00.352
+!MESSAGE Invalid response content: Content is not allowed in prolog.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1252)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:491)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:403)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:302)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:327)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:302)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:451)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:521)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:480)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$5(MarketplaceViewer.java:644)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:123)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-07-08 14:22:00.352
+!MESSAGE Received response begins with:
+
+1: The website encountered an unexpected error. Try again later.<br />
+
+
+!ENTRY org.eclipse.equinox.p2.discovery 4 0 2025-07-08 14:22:07.119
+!MESSAGE MarketplaceDiscoveryStrategy failed with an error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to https://marketplace.eclipse.org/api/p/search/apachesolr_search/git?client=org.eclipse.epp.mpc.core&os=macosx&platform.version=4.36: Invalid response content: Content is not allowed in prolog.
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:195)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:491)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:403)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:302)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:327)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:302)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:451)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:521)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:480)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$5(MarketplaceViewer.java:644)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:123)
+Caused by: org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: Content is not allowed in prolog.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	... 15 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1252)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2025-07-08 14:22:07.120
+!MESSAGE Cannot complete request to https://marketplace.eclipse.org/api/p/search/apachesolr_search/git?client=org.eclipse.epp.mpc.core&os=macosx&platform.version=4.36: Invalid response content: Content is not allowed in prolog.
+!STACK 1
+org.eclipse.epp.mpc.core.service.UnmarshalException: Invalid response content: Content is not allowed in prolog.
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:72)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:491)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:403)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:302)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:327)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:302)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:451)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:521)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:480)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$5(MarketplaceViewer.java:644)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:123)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1252)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	... 16 more
+Contains: Received response begins with:
+
+1: The website encountered an unexpected error. Try again later.<br />
+
+!SUBENTRY 2 org.eclipse.epp.mpc.core 1 0 2025-07-08 14:22:07.120
+!MESSAGE Invalid response content: Content is not allowed in prolog.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1252)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.eclipse.epp.internal.mpc.core.service.MarketplaceUnmarshaller.unmarshal(MarketplaceUnmarshaller.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:169)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:130)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:117)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:491)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:403)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.search(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.lambda$0(CachingMarketplaceService.java:302)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:327)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.search(CachingMarketplaceService.java:302)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.performQuery(MarketplaceDiscoveryStrategy.java:451)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.lambda$0(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.runDiscoveryOperation(MarketplaceCatalog.java:521)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performDiscovery(MarketplaceCatalog.java:480)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performQuery(MarketplaceCatalog.java:81)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$5(MarketplaceViewer.java:644)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:123)
+!SUBENTRY 3 org.eclipse.epp.mpc.core 1 0 2025-07-08 14:22:07.120
+!MESSAGE Received response begins with:
+
+1: The website encountered an unexpected error. Try again later.<br />
+
+!SESSION 2025-07-08 14:23:15.252 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_TH
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/kriangkrai/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.java.product -keyring /Users/kriangkrai/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-08 14:23:16.257
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-07-08 14:23:16.376
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (1322) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-08 14:23:24.233
+!MESSAGE Logback config file: /Users/kriangkrai/eclipse-workspace/SQA/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-07-08 14:23:24.316
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-08 14:23:24.316
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-07-08 14:23:24.412
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-08 14:23:24.412
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-07-08 14:23:24.909
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:191)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:124)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:783)
+	at org.eclipse.jface.resource.URLImageDescriptor._createImage(URLImageDescriptor.java:299)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:256)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:331)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:309)
+	at com.genuitec.eclipse.startup.dialogs.tabs.RecentTabFactory.createTabArea(RecentTabFactory.java:92)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:464)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:460)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:335)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:328)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:175)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-07-08 14:23:24.910
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:191)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:124)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:843)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:331)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:309)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:104)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:79)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createWorkspaceNameControl(WorkspaceControl.java:117)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createControl(WorkspaceControl.java:43)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspacesTabFactory.createTabArea(WorkspacesTabFactory.java:85)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:464)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:460)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:335)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:328)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:175)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-07-08 14:23:24.910
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:191)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:124)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:843)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:331)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:309)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:104)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:79)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createWorkspaceNameControl(WorkspaceControl.java:117)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceControl.createControl(WorkspaceControl.java:43)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspacesTabFactory.createTabArea(WorkspacesTabFactory.java:85)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:464)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:460)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:335)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:328)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:175)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-07-08 14:23:24.911
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:191)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:124)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:843)
+	at com.genuitec.eclipse.webicons.IconImageDescriptor.createImage(IconImageDescriptor.java:46)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:331)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:309)
+	at com.genuitec.eclipse.startup.dialogs.custom.UIHelper.createIcon(UIHelper.java:342)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.createBrowseOnHover(WorkspaceNameControl.java:279)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.createNameLabel(WorkspaceNameLink.java:104)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameControl.<init>(WorkspaceNameControl.java:183)
+	at com.genuitec.eclipse.startup.dialogs.tabs.WorkspaceNameLink.<init>(WorkspaceNameLink.java:79)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createRecentWorkspacesComposite(LaunchTabMainPage.java:92)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createContents(LaunchTabMainPage.java:55)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createPages(LaunchTabFactory.java:40)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createTabArea(LaunchTabFactory.java:34)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:464)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:460)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:335)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:328)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:175)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-08 14:23:26.344
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-08 14:23:26.471
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2025-07-08 14:23:26.745
+!MESSAGE Authorization Server started successfuly
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-08 14:23:27.232
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.335.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-08 14:23:27.344
+!MESSAGE [Info]	[certificates] Removed 9 expired certificates
+!SESSION 2025-07-08 14:23:58.266 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_TH
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/kriangkrai/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.java.product -keyring /Users/kriangkrai/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-08 14:23:59.017
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-07-08 14:23:59.144
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (1322) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-07-08 14:25:38.193
+!MESSAGE Logback config file: /Users/kriangkrai/eclipse-workspace/SQA/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-07-08 14:25:38.299
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-08 14:25:38.299
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-07-08 14:25:38.405
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-07-08 14:25:38.405
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-08 14:25:40.327
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-08 14:25:40.519
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY com.codetogether.hq.eclipse 1 0 2025-07-08 14:25:40.734
+!MESSAGE Authorization Server started successfuly
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-08 14:25:41.246
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.335.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-08 14:25:41.360
+!MESSAGE [Info]	[certificates] Removed 9 expired certificates
