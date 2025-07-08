@@ -1,5 +1,10 @@
 # SQA2025
-#kriangkrai prasert 663380616-4
+
+
+kriangkrai prasert 663380616-4
+
+
+
 CP353201 Software Quality Assurance [1/2568]
 
 This repository contains examples from the CP353201 Software Quality Assurance class at CS, KKU. Some examples and source code are adopted or modified from the textbooks used in the course. Some source code is adopted from active open-source projects, the JUnit5 User Guide, and other universities' open courseware and MOOCs, such as TU Delft, UBC (Vancouver), etc. The rest are original. All examples and source code given in this repository are for educational purposes only.
