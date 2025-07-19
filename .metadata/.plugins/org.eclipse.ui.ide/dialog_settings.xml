@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab5_EC"/>
 			<item value="/Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab4_BVT"/>
 		</list>
 		<section name="SmartImportWizard.dialogBounds">
@@ -18,7 +19,7 @@
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
 		<item key="ShowStatusLine" value="true"/>
-		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/MembershipRanking/src/sqa/main/Ranking.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MembershipRanking/src/sqa/main/RankingBoundaryValueTest.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MembershipRanking/src/sqa/main/RankingRobustnessTest.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/MembershipRanking/src/sqa/main/Ranking.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MembershipRanking/src/sqa/main/RankingBoundaryValueTest.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MembershipRanking/src/sqa/main/RankingRobustnessTest.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Lab5_EC/ShippingProblem/src/sqa/main/ShippingVehicle.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Lab5_EC/FactoryProblem/src/sqa/main/Income.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/ShippingProblem/src/sqa/main/ShippingVehicle.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;"/>
 		<item key="ShowDerived" value="false"/>
 		<item key="FilterByLocation" value="false"/>
 		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
