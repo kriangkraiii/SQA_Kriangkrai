@@ -9,7 +9,7 @@ public class RomanNumeralsTest {
     @Test
     void testSingleDigit() {
         assertEquals(1, romanNumerals.convertRomanNumToInt("I"));
-        assertEquals(5, romanNumerals.convertRomanNumToInt("V"));XX
+        assertEquals(5, romanNumerals.convertRomanNumToInt("V"));
     }
 
     // 2) ตัวเลขสองหลัก – หลักแรกมีค่าน้อยกว่าหลักที่สอง

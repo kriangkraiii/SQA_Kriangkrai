@@ -3923,3 +3923,51 @@ java.lang.Exception: stack trace
 
 !ENTRY org.eclipse.lsp4e 1 0 2025-07-19 13:24:05.421
 !MESSAGE [Info]	[certificates] Removed 10 expired certificates
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-19 13:29:55.371
+!MESSAGE [Info]	[fetchCompletions] Request d2cf37a4-da5d-4e9b-a0ac-b746296b5391 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 481.42570900003193ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-07-19 13:29:55.371
+!MESSAGE [Error]	[streamChoices] Request id invalid, should have "completionId" and "created": {
+  headerRequestId: 'd2cf37a4-da5d-4e9b-a0ac-b746296b5391',
+  completionId: '',
+  created: 0,
+  serverExperiments: '',
+  deploymentId: ''
+}
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-07-19 13:29:55.419
+!MESSAGE [Error]	[streamChoices] Request id invalid, should have "completionId" and "created": {
+  headerRequestId: 'd2cf37a4-da5d-4e9b-a0ac-b746296b5391',
+  completionId: '',
+  created: 0,
+  serverExperiments: '',
+  deploymentId: ''
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-19 13:29:55.419
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-19 13:29:57.537
+!MESSAGE [Info]	[fetchCompletions] Request d125a6ce-4a24-49f7-a0ef-f3834489e236 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions> finished with 200 status after 225.83099999994738ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-07-19 13:29:57.537
+!MESSAGE [Error]	[streamChoices] Request id invalid, should have "completionId" and "created": {
+  headerRequestId: 'd125a6ce-4a24-49f7-a0ef-f3834489e236',
+  completionId: '',
+  created: 0,
+  serverExperiments: '',
+  deploymentId: ''
+}
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-07-19 13:29:57.575
+!MESSAGE [Error]	[streamChoices] Request id invalid, should have "completionId" and "created": {
+  headerRequestId: 'd125a6ce-4a24-49f7-a0ef-f3834489e236',
+  completionId: '',
+  created: 0,
+  serverExperiments: '',
+  deploymentId: ''
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-07-19 13:29:57.575
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
