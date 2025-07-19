@@ -3971,3 +3971,6 @@ java.lang.Exception: stack trace
 
 !ENTRY org.eclipse.lsp4e 1 0 2025-07-19 13:29:57.575
 !MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-07-19 13:42:50.079
+!MESSAGE ex-0000000047 Cookie rejected [_cfuvid="YXgbx9gtbgptNDN2pujDVmDvoS.zFRC1A9UNteoUNGA-1752907370147-0.0.1.1-604800000", domain:cdn.webflow.com, path:/, expiry:null] Illegal 'domain' attribute "cdn.webflow.com". Domain of origin: "www.codetogether.com"
