@@ -2657,3 +2657,27 @@ Binding(COMMAND+SHIFT+T,
   serverExperiments: '',
   deploymentId: ''
 }
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-22 18:18:18.565
+!MESSAGE [Info] Document is null for editor: TVPlan.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-22 18:18:18.565
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab6_DT/TVPackage/src/sqa/main/TVPlan.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-22 18:18:18.570
+!MESSAGE [Info] Document is null for editor: TVPlanTest.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-22 18:18:18.570
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab6_DT/TVPackage/src/sqa/main/TVPlanTest.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-22 18:18:18.574
+!MESSAGE [Info] Document is null for editor: TVPlanTestComplete.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-22 18:18:18.574
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab6_DT/TVPackage/src/sqa/main/TVPlanTestComplete.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-22 18:18:18.582
+!MESSAGE [Info] Document is null for editor: TVPlanTest2.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-22 18:18:18.582
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab6_DT/TVPackage/src/sqa/main/TVPlanTest2.java

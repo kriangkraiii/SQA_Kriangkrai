@@ -1,4 +1,12 @@
-org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [double arg5] in method [void sqa.main.TVPlanTest2.testPricePerMonthEEDT(java.lang.String,boolean,boolean,boolean,double,double,double,double,double)].
+org.opentest4j.AssertionFailedError: expected: <450.0> but was: <350.0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:70)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:65)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:889)
+	at sqa.main.TVPlanTest2.testPricePerMonthLEDT(TVPlanTest2.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.Optional.ifPresent(Optional.java:178)
 	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
 	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
