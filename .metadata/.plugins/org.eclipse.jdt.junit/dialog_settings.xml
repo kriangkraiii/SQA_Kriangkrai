@@ -6,6 +6,8 @@
 		<item key="NewTestCaseCreationWizardPage.USE_SETUPCLASS" value="false"/>
 		<item key="NewTestCaseCreationWizardPage.USE_TEARDOWNCLASS" value="false"/>
 		<item key="NewTestCaseCreationWizardPage.USE_CONSTRUCTOR" value="false"/>
+		<item key="NewTestCaseCreationWizardPage2.USE_TASKMARKER" value="true"/>
+		<item key="NewTestCaseCreationWizardPage2.CREATE_FINAL_METHOD_STUBS" value="true"/>
 		<section name="NewTestCaseCreationWizard.dialogBounds">
 			<item key="DIALOG_X_ORIGIN" value="383"/>
 			<item key="DIALOG_Y_ORIGIN" value="122"/>

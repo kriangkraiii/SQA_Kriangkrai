@@ -16,4 +16,7 @@
 	<section name="BuildPathsPropertyPage">
 		<item key="pageIndex" value="3"/>
 	</section>
+	<section name="OptionalMessageDialog.hide.">
+		<item key="configure_problem_severity_dialog_id" value="false"/>
+	</section>
 </section>
