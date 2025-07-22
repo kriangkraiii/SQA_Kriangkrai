@@ -12474,3 +12474,43 @@ java.lang.ClassCastException: class org.eclipse.eclemma.core.launching.JavaAppli
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1052)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1254)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2025-07-21 14:45:25.863
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.ClassCastException: class org.eclipse.eclemma.core.launching.JavaApplicationLauncher cannot be cast to class org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate (org.eclipse.eclemma.core.launching.JavaApplicationLauncher is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @5d8e1c7f; org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @6f74359e)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchAdded(TestJarLaunchListener.java:117)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchesAdded(TestJarLaunchListener.java:185)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:257)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:930)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:689)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:736)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:689)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1052)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1254)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 120 2025-07-21 14:45:25.863
+!MESSAGE An exception occurred during launch change notification.
+!STACK 0
+java.lang.ClassCastException: class org.eclipse.eclemma.core.launching.JavaApplicationLauncher cannot be cast to class org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate (org.eclipse.eclemma.core.launching.JavaApplicationLauncher is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @5d8e1c7f; org.eclipse.jdt.junit.launcher.JUnitLaunchConfigurationDelegate is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @6f74359e)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchAdded(TestJarLaunchListener.java:117)
+	at org.springframework.ide.eclipse.boot.launch.TestJarLaunchListener.launchesAdded(TestJarLaunchListener.java:185)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:257)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:930)
+	at org.eclipse.debug.internal.core.LaunchManager.addLaunch(LaunchManager.java:689)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:736)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:689)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1052)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1254)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-21 16:10:02.183
+!MESSAGE [Info] Document is null for editor: ShippingVehicleTest.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-21 16:10:02.183
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab5_EC/ShippingProblem/src/sqa/main/ShippingVehicleTest.java
