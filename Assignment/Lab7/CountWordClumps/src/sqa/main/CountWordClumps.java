@@ -11,7 +11,7 @@ public class CountWordClumps {
 		int prev = nums[0];
 		boolean inClump = false;
 		
-		for (int i = 0; i < nums.length; i++) {
+		for (int i = 1; i < nums.length; i++) {
 			if (nums[i] == prev && !inClump) {
 				inClump = true;
 				count += 1;
