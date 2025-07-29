@@ -3807,3 +3807,21 @@ java.lang.Exception: stack trace
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2025-07-29 13:36:33.184
 !MESSAGE ex-0000000048 Cookie rejected [_cfuvid="7tt5myRnwBaNm3kCHbhbFoa.gFX98aoVcrzXDcO2fWo-1753770993135-0.0.1.1-604800000", domain:cdn.webflow.com, path:/, expiry:null] Illegal 'domain' attribute "cdn.webflow.com". Domain of origin: "www.codetogether.com"
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-29 14:37:27.819
+!MESSAGE [Info] Document is null for editor: TVPlanTest2.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-29 14:37:27.819
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab6_DT/TVPackage/src/sqa/main/TVPlanTest2.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-29 14:37:27.827
+!MESSAGE [Info] Document is null for editor: CountWordClumpsTest.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-29 14:37:27.827
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab7/CountWordClumps/src/sqa/main/CountWordClumpsTest.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-29 14:37:27.835
+!MESSAGE [Info] Document is null for editor: CountWordClumps.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-07-29 14:37:27.835
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab7/CountWordClumps/src/sqa/main/CountWordClumps.java
