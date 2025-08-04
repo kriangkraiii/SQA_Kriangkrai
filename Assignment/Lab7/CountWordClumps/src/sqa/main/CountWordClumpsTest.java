@@ -1,74 +1,72 @@
 package sqa.main;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
 class CountWordClumpsTest {
 
-	@Test
-	void testCountClumps() {
-		fail("Not yet implemented");
-	}
+	 // กรณีผิดเงื่อนไขเริ่มต้น
+    @Test
+    void testNullArray() {
+        assertEquals(0, CountWordClumps.countClumps(null), "Null array");
+    }
 
-	@Test
-	void testObject() {
-		fail("Not yet implemented");
-	}
+    @Test
+    void testEmptyArray() {
+        assertEquals(0, CountWordClumps.countClumps(new int[]{}), "Empty array");
+    }
 
-	@Test
-	void testGetClass() {
-		fail("Not yet implemented");
-	}
+    // กรณี Array ตัวเดียว ไม่มี clump
+    @Test
+    void testSingleElement() {
+        assertEquals(0, CountWordClumps.countClumps(new int[]{5}), "Single element");
+    }
 
-	@Test
-	void testHashCode() {
-		fail("Not yet implemented");
-	}
+    // กรณีไม่มี clump
+    @Test
+    void testNoClump() {
+        assertEquals(0, CountWordClumps.countClumps(new int[]{1,2,3,4,5}), "No clumps");
+    }
 
-	@Test
-	void testEquals() {
-		fail("Not yet implemented");
-	}
+    // กรณี all clump ติดกันหมด
+    @Test
+    void testOneLongClump() {
+        assertEquals(1, CountWordClumps.countClumps(new int[]{6,6,6,6,6}), "All same");
+    }
 
-	@Test
-	void testClone() {
-		fail("Not yet implemented");
-	}
+    // กรณี clump เดียวกลางอาร์เรย์
+    @Test
+    void testMiddleClump() {
+        assertEquals(1, CountWordClumps.countClumps(new int[]{1,2,2,3}), "Middle clump");
+    }
 
-	@Test
-	void testToString() {
-		fail("Not yet implemented");
-	}
+    // กรณี clump หัวท้าย
+    @Test
+    void testSeparateClumps() {
+        assertEquals(2, CountWordClumps.countClumps(new int[]{7,7,8,9,10,10}), "Clump at start and end");
+    }
 
-	@Test
-	void testNotify() {
-		fail("Not yet implemented");
-	}
+    // กรณี clump ติดกันหลายกลุ่ม
+    @Test
+    void testMultipleClumps() {
+        assertEquals(3, CountWordClumps.countClumps(new int[]{1,1,2,2,3,3,3,4}), "Multiple clumps");
+    }
 
-	@Test
-	void testNotifyAll() {
-		fail("Not yet implemented");
-	}
+    // กรณี clump ติดกันแยกกลุ่มกลับมา clump เดิมอีก
+    @Test
+    void testNonconsecutiveClump() {
+        assertEquals(2, CountWordClumps.countClumps(new int[]{1,1,2,1,1}), "Separated same number clumps");
+    }
 
-	@Test
-	void testWait() {
-		fail("Not yet implemented");
-	}
+    // corner case: คล้าย clump ติดๆแต่ inClump ต้องไม่ถูกนับซ้ำ
+    @Test
+    void testLongClumpCountOnce() {
+        assertEquals(1, CountWordClumps.countClumps(new int[]{4,4,4,4}), "Long single clump");
+    }
 
-	@Test
-	void testWaitLong() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testWaitLongInt() {
-		fail("Not yet implemented");
-	}
-
-	@Test
-	void testFinalize() {
-		fail("Not yet implemented");
-	}
-
+    // กรณีสลับค่า ไม่เป็น clump
+    @Test
+    void testAlternating() {
+        assertEquals(0, CountWordClumps.countClumps(new int[]{1,2,1,2,1}), "Alternating values");
+    }
 }

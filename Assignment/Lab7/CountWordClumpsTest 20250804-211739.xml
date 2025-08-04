@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CountWordClumpsTest" project="CountWordClumps" tests="11" started="11" failures="0" errors="0" ignored="0">
+  <testsuite name="sqa.main.CountWordClumpsTest" time="0.0" displayname="CountWordClumpsTest" uniqueid="[engine:junit-jupiter]/[class:sqa.main.CountWordClumpsTest]">
+    <testcase name="testSingleElement" classname="sqa.main.CountWordClumpsTest" time="0.0" displayname="testSingleElement()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.CountWordClumpsTest]/[method:testSingleElement()]"/>
+    <testcase name="testEmptyArray" classname="sqa.main.CountWordClumpsTest" time="0.0" displayname="testEmptyArray()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.CountWordClumpsTest]/[method:testEmptyArray()]"/>
+    <testcase name="testAlternating" classname="sqa.main.CountWordClumpsTest" time="0.0" displayname="testAlternating()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.CountWordClumpsTest]/[method:testAlternating()]"/>
+    <testcase name="testMultipleClumps" classname="sqa.main.CountWordClumpsTest" time="0.0" displayname="testMultipleClumps()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.CountWordClumpsTest]/[method:testMultipleClumps()]"/>
+    <testcase name="testLongClumpCountOnce" classname="sqa.main.CountWordClumpsTest" time="0.0" displayname="testLongClumpCountOnce()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.CountWordClumpsTest]/[method:testLongClumpCountOnce()]"/>
+    <testcase name="testMiddleClump" classname="sqa.main.CountWordClumpsTest" time="0.0" displayname="testMiddleClump()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.CountWordClumpsTest]/[method:testMiddleClump()]"/>
+    <testcase name="testNonconsecutiveClump" classname="sqa.main.CountWordClumpsTest" time="0.0" displayname="testNonconsecutiveClump()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.CountWordClumpsTest]/[method:testNonconsecutiveClump()]"/>
+    <testcase name="testNullArray" classname="sqa.main.CountWordClumpsTest" time="0.0" displayname="testNullArray()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.CountWordClumpsTest]/[method:testNullArray()]"/>
+    <testcase name="testNoClump" classname="sqa.main.CountWordClumpsTest" time="0.0" displayname="testNoClump()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.CountWordClumpsTest]/[method:testNoClump()]"/>
+    <testcase name="testOneLongClump" classname="sqa.main.CountWordClumpsTest" time="0.0" displayname="testOneLongClump()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.CountWordClumpsTest]/[method:testOneLongClump()]"/>
+    <testcase name="testSeparateClumps" classname="sqa.main.CountWordClumpsTest" time="0.0" displayname="testSeparateClumps()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.CountWordClumpsTest]/[method:testSeparateClumps()]"/>
+  </testsuite>
+</testrun>
