@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TopDownIntegrationTest" project="CookingConversionCalculator" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="sqa.main.TopDownIntegrationTest" time="0.001" displayname="TopDownIntegrationTest" uniqueid="[engine:junit-jupiter]/[class:sqa.main.TopDownIntegrationTest]">
+    <testcase name="testInvalidChoiceReturnsZero" classname="sqa.main.TopDownIntegrationTest" time="0.0" displayname="testInvalidChoiceReturnsZero()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.TopDownIntegrationTest]/[method:testInvalidChoiceReturnsZero()]"/>
+    <testcase name="testMassConversionIntegration" classname="sqa.main.TopDownIntegrationTest" time="0.0" displayname="testMassConversionIntegration()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.TopDownIntegrationTest]/[method:testMassConversionIntegration()]"/>
+    <testcase name="testTemperatureConversionIntegration" classname="sqa.main.TopDownIntegrationTest" time="0.0" displayname="testTemperatureConversionIntegration()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.TopDownIntegrationTest]/[method:testTemperatureConversionIntegration()]"/>
+    <testcase name="testEdgeCases" classname="sqa.main.TopDownIntegrationTest" time="0.0" displayname="testEdgeCases()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.TopDownIntegrationTest]/[method:testEdgeCases()]"/>
+    <testcase name="testLiquidVolumeConversionIntegration" classname="sqa.main.TopDownIntegrationTest" time="0.001" displayname="testLiquidVolumeConversionIntegration()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.TopDownIntegrationTest]/[method:testLiquidVolumeConversionIntegration()]"/>
+  </testsuite>
+</testrun>

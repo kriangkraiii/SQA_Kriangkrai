@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BottomUpIntegrationTest" project="CookingConversionCalculator" tests="8" started="8" failures="0" errors="0" ignored="0">
+  <testsuite name="sqa.main.BottomUpIntegrationTest" time="0.001" displayname="BottomUpIntegrationTest" uniqueid="[engine:junit-jupiter]/[class:sqa.main.BottomUpIntegrationTest]">
+    <testcase name="testCalculatorWithMassConverter" classname="sqa.main.BottomUpIntegrationTest" time="0.0" displayname="testCalculatorWithMassConverter()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.BottomUpIntegrationTest]/[method:testCalculatorWithMassConverter()]"/>
+    <testcase name="testBoundaryValues" classname="sqa.main.BottomUpIntegrationTest" time="0.0" displayname="testBoundaryValues()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.BottomUpIntegrationTest]/[method:testBoundaryValues()]"/>
+    <testcase name="testCompleteSystemIntegration" classname="sqa.main.BottomUpIntegrationTest" time="0.0" displayname="testCompleteSystemIntegration()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.BottomUpIntegrationTest]/[method:testCompleteSystemIntegration()]"/>
+    <testcase name="testCalculatorWithLiquidVolumeConverter" classname="sqa.main.BottomUpIntegrationTest" time="0.0" displayname="testCalculatorWithLiquidVolumeConverter()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.BottomUpIntegrationTest]/[method:testCalculatorWithLiquidVolumeConverter()]"/>
+    <testcase name="testMassConverterUnit" classname="sqa.main.BottomUpIntegrationTest" time="0.0" displayname="testMassConverterUnit()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.BottomUpIntegrationTest]/[method:testMassConverterUnit()]"/>
+    <testcase name="testCalculatorWithTemperatureConverter" classname="sqa.main.BottomUpIntegrationTest" time="0.0" displayname="testCalculatorWithTemperatureConverter()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.BottomUpIntegrationTest]/[method:testCalculatorWithTemperatureConverter()]"/>
+    <testcase name="testTemperatureConverterUnit" classname="sqa.main.BottomUpIntegrationTest" time="0.0" displayname="testTemperatureConverterUnit()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.BottomUpIntegrationTest]/[method:testTemperatureConverterUnit()]"/>
+    <testcase name="testLiquidVolumeConverterUnit" classname="sqa.main.BottomUpIntegrationTest" time="0.0" displayname="testLiquidVolumeConverterUnit()" uniqueid="[engine:junit-jupiter]/[class:sqa.main.BottomUpIntegrationTest]/[method:testLiquidVolumeConverterUnit()]"/>
+  </testsuite>
+</testrun>
