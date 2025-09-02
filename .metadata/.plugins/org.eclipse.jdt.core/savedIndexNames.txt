@@ -1,4 +1,5 @@
 INDEX VERSION 1.134+/Users/kriangkrai/eclipse-workspace/SQA/.metadata/.plugins/org.eclipse.jdt.core
+<<<<<<< HEAD
 1742521949.index
 4113124629.index
 3466160191.index
@@ -18,3 +19,7 @@ INDEX VERSION 1.134+/Users/kriangkrai/eclipse-workspace/SQA/.metadata/.plugins/o
 1865797976.index
 4155728934.index
 381126095.index
+=======
+1865797976.index
+1643574987.index
+>>>>>>> 2025

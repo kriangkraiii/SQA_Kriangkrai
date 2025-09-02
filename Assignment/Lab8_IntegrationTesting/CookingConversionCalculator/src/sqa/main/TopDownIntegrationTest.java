@@ -1,10 +1,18 @@
 package sqa.main;
 
+<<<<<<< HEAD
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
+=======
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+>>>>>>> 2025
 public class TopDownIntegrationTest {
     
     private CookingConversionCalculator calculator;
