@@ -5988,3 +5988,2225 @@ java.io.FileNotFoundException: /Users/kriangkrai/eclipse-workspace/SQA/.metadata
 	at org.eclipse.jdt.internal.core.search.processing.JobManager.indexerLoop(JobManager.java:508)
 	at java.base/java.lang.Thread.run(Thread.java:1575)
 >>>>>>> 2025
+!SESSION 2025-09-02 13:40:17.020 -----------------------------------------------
+eclipse.buildId=4.37.0.20250731-0702
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_TH
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/kriangkrai/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.java.product -keyring /Users/kriangkrai/.eclipse_keyring
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-09-02 13:40:17.978
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (1322) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-02 13:40:18.088
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY com.genuitec.eclipse.startup 4 0 2025-09-02 13:40:19.511
+!MESSAGE Unexpected exception
+!STACK 0
+Unexpected character (<) at position 0.
+	at org.json.simple.parser.Yylex.yylex(Yylex.java:610)
+	at org.json.simple.parser.JSONParser.nextToken(JSONParser.java:269)
+	at org.json.simple.parser.JSONParser.parse(JSONParser.java:118)
+	at org.json.simple.parser.JSONParser.parse(JSONParser.java:81)
+	at org.json.simple.parser.JSONParser.parse(JSONParser.java:75)
+	at com.genuitec.eclipse.startup.model.WorkspaceDataProvider.loadWorkspaceData(WorkspaceDataProvider.java:134)
+	at com.genuitec.eclipse.startup.model.WorkspaceDataProvider.getData(WorkspaceDataProvider.java:120)
+	at com.genuitec.eclipse.startup.model.WorkspaceDataProvider.getData(WorkspaceDataProvider.java:113)
+	at com.genuitec.eclipse.startup.model.WorkspaceDataProvider.lambda$8(WorkspaceDataProvider.java:283)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.DistinctOps$1$2.accept(DistinctOps.java:174)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:727)
+	at com.genuitec.eclipse.startup.model.WorkspaceDataProvider.getWorkspaceDataList(WorkspaceDataProvider.java:283)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createRecentWorkspacesComposite(LaunchTabMainPage.java:81)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabMainPage.createContents(LaunchTabMainPage.java:55)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createPages(LaunchTabFactory.java:40)
+	at com.genuitec.eclipse.startup.dialogs.tabs.LaunchTabFactory.createTabArea(LaunchTabFactory.java:34)
+	at com.genuitec.eclipse.startup.dialogs.tabs.CodeFullyTabFactory.createContents(CodeFullyTabFactory.java:139)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabContent(SideTabFolder.java:455)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.doCreateTabs(SideTabFolder.java:224)
+	at com.genuitec.eclipse.startup.dialogs.custom.SideTabFolder.createTabs(SideTabFolder.java:155)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createTabs(AbstactSideTabDialog.java:142)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:464)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.createTabs(CustomStartupDialog.java:460)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.createContents(AbstactSideTabDialog.java:122)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at com.genuitec.eclipse.startup.dialogs.custom.AbstactSideTabDialog.open(AbstactSideTabDialog.java:61)
+	at com.genuitec.eclipse.startup.dialogs.custom.CustomStartupDialog.prompt(CustomStartupDialog.java:335)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.showCustomDialog(IDEApplication.java:627)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.promptForWorkspace(IDEApplication.java:383)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.checkInstanceLocation(IDEApplication.java:328)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:175)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.apache.felix.scr 4 0 2025-09-02 13:40:29.033
+!MESSAGE bundle org.apache.felix.scr:2.2.12 (581) Circular reference detected trying to get service {org.eclipse.m2e.core.project.IMavenProjectChangedListener}={service.id=256, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.WorkspaceStateWriter, component.id=55}
+ stack of references: ServiceReference: {org.eclipse.m2e.core.project.IMavenProjectChangedListener}={service.id=256, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.WorkspaceStateWriter, component.id=55}
+ServiceReference: {org.eclipse.m2e.core.project.IMavenProjectRegistry}={service.id=249, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.registry.MavenProjectManager, component.id=58}
+    Dependency: DependencyManager: Component [Component: org.eclipse.m2e.core.embedder.MavenModelManager (43)] reference [projectManager]
+
+!STACK 0
+java.lang.Exception: stack trace
+	at org.apache.felix.scr.impl.ComponentRegistry.enterCreate(ComponentRegistry.java:493)
+	at org.apache.felix.scr.impl.BundleComponentActivator.enterCreate(BundleComponentActivator.java:735)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:229)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:226)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:120)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:588)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:590)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:666)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.inject.methods.BindMethod.getServiceObject(BindMethod.java:675)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2625)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.prebind(DependencyManager.java:441)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1843)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1060)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:920)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:229)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:226)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:120)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:588)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:590)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:666)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.inject.field.FieldHandler$ReferenceMethodImpl.getServiceObject(FieldHandler.java:552)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2625)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.prebind(DependencyManager.java:1414)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1843)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1060)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:776)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1287)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1238)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1232)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1152)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:959)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:895)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1184)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:117)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:134)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:988)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:999)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:933)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:146)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:321)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:495)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:929)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:915)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:133)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:984)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:752)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1287)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1238)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1232)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1152)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:959)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:895)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1184)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:117)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:134)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:988)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:999)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:933)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:146)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:321)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:495)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:515)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:1068)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:594)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:257)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:184)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:565)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:826)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:768)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1066)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:394)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:643)
+	at org.eclipse.osgi.container.Module.start(Module.java:500)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:528)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:622)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:353)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:521)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:438)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:195)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:186)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.apache.felix.scr 4 0 2025-09-02 13:40:29.037
+!MESSAGE bundle org.apache.felix.scr:2.2.12 (581) Circular reference detected trying to get service {org.eclipse.m2e.core.project.IMavenProjectChangedListener}={service.id=256, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.WorkspaceStateWriter, component.id=55}
+ stack of references: ServiceReference: {org.eclipse.m2e.core.project.IMavenProjectChangedListener}={service.id=256, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.WorkspaceStateWriter, component.id=55}
+    Dependency: DependencyManager: Component [Component: org.eclipse.m2e.core.internal.project.registry.MavenProjectManager (58)] reference [MavenProjectChangedListener]
+ServiceReference: {org.eclipse.m2e.core.project.IMavenProjectRegistry}={service.id=249, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.registry.MavenProjectManager, component.id=58}
+    Dependency: DependencyManager: Component [Component: org.eclipse.m2e.core.embedder.MavenModelManager (43)] reference [projectManager]
+    Dependency: DependencyManager: Component [Component: org.eclipse.m2e.core.embedder.MavenModelManager (43)] reference [projectManager]
+ServiceReference: {org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager}={service.id=247, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager, component.id=60}
+
+!STACK 0
+java.lang.Exception: stack trace
+	at org.apache.felix.scr.impl.ComponentRegistry.enterCreate(ComponentRegistry.java:493)
+	at org.apache.felix.scr.impl.BundleComponentActivator.enterCreate(BundleComponentActivator.java:735)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:229)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:226)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:120)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:588)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:590)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:666)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.inject.methods.BindMethod.getServiceObject(BindMethod.java:675)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2625)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.prebind(DependencyManager.java:441)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1843)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1060)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:920)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:229)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:226)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:120)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:588)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:590)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:666)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.inject.field.FieldHandler$ReferenceMethodImpl.getServiceObject(FieldHandler.java:552)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2625)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.prebind(DependencyManager.java:1414)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1843)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1060)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:920)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:229)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:226)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:120)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:588)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:590)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:666)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.inject.field.FieldHandler$ReferenceMethodImpl.getServiceObject(FieldHandler.java:552)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2625)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.prebind(DependencyManager.java:1414)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1843)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1060)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:776)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1287)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1238)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1232)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1152)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:959)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:895)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1184)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:117)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:134)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:988)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:999)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:933)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:146)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:321)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:495)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:929)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:915)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:133)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:984)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:752)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1287)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1238)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1232)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1152)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:959)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:895)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1184)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:117)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:134)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:988)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:999)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:933)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:146)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:321)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:495)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:515)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:1068)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:594)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:257)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:184)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:565)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:826)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:768)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1066)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:394)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:643)
+	at org.eclipse.osgi.container.Module.start(Module.java:500)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:528)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:622)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:353)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:521)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:438)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:195)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:186)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-02 13:40:29.156
+!MESSAGE Logback config file: /Users/kriangkrai/eclipse-workspace/SQA/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-09-02 13:40:29.226
+!MESSAGE Unable to load resource file:/Users/kriangkrai/eclipse-workspace/SQA/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.xml.sax.SAXParseExceptionpublicId: file:/Users/kriangkrai/eclipse-workspace/SQA/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi; systemId: file:/Users/kriangkrai/eclipse-workspace/SQA/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.getResource(ResourceHandler.java:287)
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.loadResource(ResourceHandler.java:263)
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.loadMostRecentModel(ResourceHandler.java:166)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.loadApplicationModel(E4Application.java:368)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:244)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:604)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+Caused by: org.xml.sax.SAXParseExceptionpublicId: file:/Users/kriangkrai/eclipse-workspace/SQA/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi; systemId: file:/Users/kriangkrai/eclipse-workspace/SQA/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi; lineNumber: 2; columnNumber: 2; The markup in the document preceding the root element must be well-formed.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:892)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:635)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:113)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:551)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:890)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:826)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:134)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1225)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:326)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:260)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1563)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1342)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 21 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-09-02 13:40:29.227
+!MESSAGE The persisted application model has no top-level window. Reinitializing with the default application model.
+!STACK 0
+java.lang.Exception
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.loadMostRecentModel(ResourceHandler.java:171)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.loadApplicationModel(E4Application.java:368)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:244)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:604)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.ui 2 0 2025-09-02 13:40:29.252
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-02 13:40:29.252
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-09-02 13:40:29.345
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-02 13:40:29.345
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-09-02 13:40:29.354
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-02 13:40:29.354
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY org.eclipse.jface 2 0 2025-09-02 13:40:30.350
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-09-02 13:40:30.350
+!MESSAGE A conflict occurred for ALT+CTRL+SHIFT+T:
+Binding(ALT+CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.terminal.view.ui.command.launchToolbar,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.terminal.view.ui.command.launchToolbar"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.view.ui.command.launchToolbar,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm.terminal.view.ui.command.launchToolbar"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.debug.ui 4 120 2025-09-02 13:40:30.741
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 2; The content of elements must consist of well-formed character data or markup.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2598)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2688)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:635)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:551)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:890)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:826)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:134)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.restoreLaunchHistory(LaunchConfigurationManager.java:497)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.loadLaunchHistories(LaunchConfigurationManager.java:1053)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getLaunchHistory(LaunchConfigurationManager.java:1025)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.internalGetHistory(AbstractLaunchHistoryAction.java:545)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.getToolTip(AbstractLaunchHistoryAction.java:237)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:507)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1460)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2036)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:189)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-02 13:40:31.508
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-02 13:40:32.480
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY com.genuitec.eclipse.codetogether.ui 1 0 2025-09-02 13:40:34.203
+!MESSAGE Proxies not enabled
+
+!ENTRY com.genuitec.eclipse.codetogether.ui 1 0 2025-09-02 13:40:34.203
+!MESSAGE No proxy data found for url: https://live.codetogether.io/ct-url
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:40:34.294
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.353.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:40:34.436
+!MESSAGE [Info]	[certificates] Removed 12 expired certificates
+
+!ENTRY org.eclipse.oomph.jreinfo 4 0 2025-09-02 13:41:08.024
+!MESSAGE Premature end of file.
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:262)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at java.xml/javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:122)
+	at org.eclipse.oomph.util.XMLUtil.loadDocument(XMLUtil.java:50)
+	at org.eclipse.oomph.util.XMLUtil.loadRootElement(XMLUtil.java:65)
+	at org.eclipse.oomph.jreinfo.JREInfo.getAllMac(JREInfo.java:199)
+	at org.eclipse.oomph.jreinfo.JREInfo.getAll(JREInfo.java:73)
+	at org.eclipse.oomph.jreinfo.JREManager.loadJavaHomes(JREManager.java:398)
+	at org.eclipse.oomph.jreinfo.JREManager.<init>(JREManager.java:78)
+	at org.eclipse.oomph.jreinfo.JREManager.<clinit>(JREManager.java:62)
+	at org.eclipse.oomph.setup.ui.wizards.SetupWizard.updateJREs(SetupWizard.java:997)
+	at org.eclipse.oomph.setup.ui.wizards.SetupWizard.indexLoaded(SetupWizard.java:940)
+	at org.eclipse.oomph.setup.ui.wizards.SetupWizard$IndexLoader.indexLoaded(SetupWizard.java:1473)
+	at org.eclipse.oomph.setup.ui.wizards.SetupWizard$IndexLoader$4.run(SetupWizard.java:1251)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4382)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4005)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:167)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:369)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:470)
+	at org.eclipse.oomph.setup.ui.wizards.SetupWizard$ProgressMonitorDialogIndexLoader.loadIndex(SetupWizard.java:1580)
+	at org.eclipse.oomph.setup.ui.wizards.SetupWizard$IndexLoader.loadIndex(SetupWizard.java:1181)
+	at org.eclipse.oomph.setup.ui.wizards.SetupWizard$4.run(SetupWizard.java:930)
+	at org.eclipse.oomph.ui.UIUtil$4.run(UIUtil.java:567)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4382)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4005)
+	at org.eclipse.oomph.setup.ui.wizards.SetupWizard$IndexLoader.awaitIndexLoad(SetupWizard.java:1492)
+	at org.eclipse.oomph.setup.ui.wizards.VariablePage.enterPage(VariablePage.java:685)
+	at org.eclipse.oomph.setup.ui.wizards.SetupWizard.pageChanged(SetupWizard.java:664)
+	at org.eclipse.jface.wizard.WizardDialog$5.run(WizardDialog.java:1518)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:167)
+	at org.eclipse.jface.wizard.WizardDialog.firePageChanged(WizardDialog.java:1515)
+	at org.eclipse.jface.wizard.WizardDialog.update(WizardDialog.java:1325)
+	at org.eclipse.jface.wizard.WizardDialog.showStartingPage(WizardDialog.java:1281)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:639)
+	at org.eclipse.oomph.ui.OomphWizardDialog.createContents(OomphWizardDialog.java:133)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1088)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at org.eclipse.oomph.setup.ui.wizards.SetupWizard.openDialog(SetupWizard.java:782)
+	at org.eclipse.oomph.setup.ui.wizards.SetupWizard$Updater.openDialog(SetupWizard.java:1813)
+	at org.eclipse.oomph.setup.ui.wizards.SetupWizard$Updater.perform(SetupWizard.java:1850)
+	at org.eclipse.oomph.setup.presentation.NotificationViewPart$2.lambda$0(NotificationViewPart.java:245)
+	at org.eclipse.oomph.ui.UIUtil$5.run(UIUtil.java:604)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4382)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4005)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.ui 4 0 2025-09-02 13:41:58.916
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.io.File.getParentFile()" because the return value of "org.apache.maven.model.Model.getPomFile()" is null
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.getProjectName(ProjectConfigurationManager.java:1003)
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizardLocationPage.validate(MavenProjectWizardLocationPage.java:298)
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizardLocationPage.lambda$2(MavenProjectWizardLocationPage.java:145)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:83)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:286)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4660)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1657)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1680)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1665)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1394)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4427)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4003)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:130)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4660)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1657)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1680)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1665)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1394)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4427)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4003)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-02 13:45:09.139
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-02 13:45:09.142
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-02 13:45:13.465
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-02 13:45:13.465
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-02 13:45:13.465
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-02 13:45:13.465
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-02 13:45:13.467
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-02 13:45:13.467
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-02 13:45:58.767
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-02 13:45:58.769
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-02 13:46:21.246
+!MESSAGE [Info] Language ID not found for extension: xml
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:21.817
+!MESSAGE [Info]	[fetchCompletions] Request 4e475780-385e-4c4e-91f6-f4d018966409 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 509.4960420000134ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:21.901
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.jface 2 0 2025-09-02 13:46:21.920
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-09-02 13:46:21.920
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:22.200
+!MESSAGE [Info]	[fetchCompletions] Request 3808537e-9a46-4fd6-91bb-87ad8e8a4124 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 254.27324999996927ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:22.228
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:23.850
+!MESSAGE [Info]	[fetchCompletions] Request b77708be-0b73-4800-8e1d-ecec763f75f8 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 222.30924999999115ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:23.988
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:24.253
+!MESSAGE [Info]	[fetchCompletions] Request 5fe5c4b4-c895-4c7d-8ad1-e626f919b4bf at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 237.95099999994272ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:24.306
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:26.556
+!MESSAGE [Info]	[fetchCompletions] Request f936699d-684e-4bdf-94d2-e0b9b93a4ead at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 225.80712499999208ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:26.676
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:27.575
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:28.554
+!MESSAGE [Info]	[code-referencing] No match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:31.832
+!MESSAGE [Info]	[fetchCompletions] Request 384b7162-0414-429b-8d2d-989d7b62567c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 229.95866699999897ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:31.913
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:32.157
+!MESSAGE [Info]	[fetchCompletions] Request b28c25b3-2b23-4675-a612-ce2ed644a8d6 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 210.6722079999745ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:32.268
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:33.968
+!MESSAGE [Info]	[fetchCompletions] Request 0e7e4c6a-91b1-4e13-bba7-a0a58abfad8a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 237.38233400002355ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:35.334
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:35.607
+!MESSAGE [Info]	[fetchCompletions] Request b2ff99cb-89f4-4e04-8323-a59a48f4d07f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 241.03958300000522ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:35.714
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:36.030
+!MESSAGE [Info]	[code-referencing] Calling Match
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:36.541
+!MESSAGE [Info]	[code-referencing] Match found
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:36.541
+!MESSAGE [Info]	[code-referencing] Calling FilesForMatch
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:46:37.241
+!MESSAGE [Info]	[Public Code References] Text found matching public code in file:///Users/kriangkrai/eclipse-workspace/SQA/mockito-junit-lab9/pom.xml [Ln 7, Col 8] near ndencies>     <dependency>       <groupId>org.junit.jupiter</groupId>       <artifactId>junit-jupiter-api</artifactId>       <version>5.10.0</version>       <scope>test</scope>     </dependency>     <dependency>       <groupId>org.mockito</groupId>       <artifactId>mockito-core</artifactId>       <version>5.5.0</version>       <scope>test</scope>     </dependency>     <dependency>       <groupId>org.mockito</groupId>       <artifactId>mockito-junit-jupiter</artifactId>       <version>5.5.0</version>       <scope>test</scope>     </dependency>...:
+  1) [Apache-2.0] https://github.com/github-copilot/code_referencing?cursor=01374eed997d5e5bfafcaa59da6e51f6,0f690a9fb7c894571453d24cdd71eb98,1330bce2493771f25610461f0b83e780,31e593240ab56ec4e89c0bd1649e72b8,449c786a2192fc8e6804d38d9723f8df,65b62e682610e0321b2228f0c328088f,75cb81e667db9aa356584686e02d5dec,ab2f1dced2d6647e5c6ee593c6a8c800,ad87f71eb8320a93c9cf638bb53e0a23,b10eb43bfd598571ab615c2ca17876eb,
+  2) [GPL-3.0] https://github.com/github-copilot/code_referencing?cursor=01374eed997d5e5bfafcaa59da6e51f6,0f690a9fb7c894571453d24cdd71eb98,1330bce2493771f25610461f0b83e780,31e593240ab56ec4e89c0bd1649e72b8,449c786a2192fc8e6804d38d9723f8df,65b62e682610e0321b2228f0c328088f,75cb81e667db9aa356584686e02d5dec,ab2f1dced2d6647e5c6ee593c6a8c800,ad87f71eb8320a93c9cf638bb53e0a23,b10eb43bfd598571ab615c2ca17876eb,
+  3) [ISC] https://github.com/github-copilot/code_referencing?cursor=01374eed997d5e5bfafcaa59da6e51f6,0f690a9fb7c894571453d24cdd71eb98,1330bce2493771f25610461f0b83e780,31e593240ab56ec4e89c0bd1649e72b8,449c786a2192fc8e6804d38d9723f8df,65b62e682610e0321b2228f0c328088f,75cb81e667db9aa356584686e02d5dec,ab2f1dced2d6647e5c6ee593c6a8c800,ad87f71eb8320a93c9cf638bb53e0a23,b10eb43bfd598571ab615c2ca17876eb,
+  4) [MIT] https://github.com/github-copilot/code_referencing?cursor=01374eed997d5e5bfafcaa59da6e51f6,0f690a9fb7c894571453d24cdd71eb98,1330bce2493771f25610461f0b83e780,31e593240ab56ec4e89c0bd1649e72b8,449c786a2192fc8e6804d38d9723f8df,65b62e682610e0321b2228f0c328088f,75cb81e667db9aa356584686e02d5dec,ab2f1dced2d6647e5c6ee593c6a8c800,ad87f71eb8320a93c9cf638bb53e0a23,b10eb43bfd598571ab615c2ca17876eb,
+  5) [unknown] https://github.com/github-copilot/code_referencing?cursor=01374eed997d5e5bfafcaa59da6e51f6,0f690a9fb7c894571453d24cdd71eb98,1330bce2493771f25610461f0b83e780,31e593240ab56ec4e89c0bd1649e72b8,449c786a2192fc8e6804d38d9723f8df,65b62e682610e0321b2228f0c328088f,75cb81e667db9aa356584686e02d5dec,ab2f1dced2d6647e5c6ee593c6a8c800,ad87f71eb8320a93c9cf638bb53e0a23,b10eb43bfd598571ab615c2ca17876eb,
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:47:45.375
+!MESSAGE [Info]	[fetchCompletions] Request 1eb3e60b-2771-44d6-b5b8-821f21f1a900 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 244.5912079999689ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:47:45.376
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:01.276
+!MESSAGE [Info]	[fetchCompletions] Request 999faaa3-e3d6-44a9-b25d-fd04903d4ff6 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 210.41783300001407ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:01.277
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:12.278
+!MESSAGE [Info]	[fetchCompletions] Request 066ed49b-c148-4953-952a-9e197cb200b4 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 215.97499999997672ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:13.122
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:13.364
+!MESSAGE [Info]	[fetchCompletions] Request fe69d004-da35-4acf-b03a-0590d7358cc5 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 213.56466699996963ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:13.407
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:13.692
+!MESSAGE [Info]	[fetchCompletions] Request 727ee5e0-8a5e-4d05-a357-ac29c89ff319 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 225.48212499998044ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:14.366
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:14.632
+!MESSAGE [Info]	[fetchCompletions] Request 84d15123-c36a-49dc-a279-08a2c3629f2f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 242.46462499996414ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:14.682
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:15.582
+!MESSAGE [Info]	[fetchCompletions] Request 7e30094a-2c86-43b9-9dd5-a178461bc52a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 224.46508300001733ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:15.627
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:20.890
+!MESSAGE [Info]	[fetchCompletions] Request d969fbd5-881e-47bf-b8db-70227cd31999 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 277.73112499999115ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:20.936
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:21.160
+!MESSAGE [Info]	[fetchCompletions] Request 6e9c6eba-ecc8-422e-a8e7-3d9ffa123c57 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 220.8361670000013ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:21.201
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:21.442
+!MESSAGE [Info]	[fetchCompletions] Request 99c1963c-d210-4257-8571-bf34162fd7d2 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 236.49391700001433ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:21.554
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:21.839
+!MESSAGE [Info]	[fetchCompletions] Request 0d5f87f8-3550-4d2a-a068-2bb63e37ad94 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 267.8541250000126ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:21.880
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:24.325
+!MESSAGE [Info]	[fetchCompletions] Request cbd23279-d181-4849-92d4-917b8ab79139 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 274.23354099999415ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:48:24.366
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:49:45.063
+!MESSAGE [Info]	[fetchCompletions] Request 167806de-6f1c-4e7c-8848-0c7e88ef26c2 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 234.91716599999927ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:49:45.574
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:49:45.829
+!MESSAGE [Info]	[fetchCompletions] Request ccd246be-13eb-42e7-bd76-0377667b08b6 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 232.3777499999851ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:49:45.927
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:49:46.651
+!MESSAGE [Info]	[fetchCompletions] Request 0c3b5723-22ec-41bc-801c-a2b43b8a062a at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 246.53495800006203ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:49:46.704
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:50:36.624
+!MESSAGE [Info]	[fetchCompletions] Request cb029799-cc05-45d4-bf57-80c2aa565782 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 217.62158400006592ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:50:36.670
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:51:56.061
+!MESSAGE [Info]	[fetchCompletions] Request 3e0fb9d4-96dd-42fb-bde8-bd496362efa6 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 216.5882500000298ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:51:56.104
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:55:07.843
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:55:07.843
+!MESSAGE [Info]	[fetchCompletions] Request 14b0f33e-f5e9-43f4-a539-75e02fa5d985 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 468.2394590000622ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:55:08.099
+!MESSAGE [Info]	[fetchCompletions] Request 5ac513d4-9ffd-4cde-9e6b-1ab415c77dea at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 221.03495899995323ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:55:08.214
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:55:15.623
+!MESSAGE [Info]	[fetchCompletions] Request 2402ac49-b842-4ece-89b3-07af58fd21e7 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 215.99783300003037ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:55:15.624
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:55:23.948
+!MESSAGE [Info]	[fetchCompletions] Request 08ddcea8-84cd-46c1-aa40-a414c8ebab1d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 223.86562499997672ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 13:55:24.000
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-02 14:32:39.207
+!MESSAGE ex-0000000065 Cookie rejected [_cfuvid="3KLW5iwxAfKh7RD.TUVcRLxWdh84QRtnkcb0z6KDvTI-1756798359114-0.0.1.1-604800000", domain:cdn.webflow.com, path:/, expiry:null] Illegal 'domain' attribute "cdn.webflow.com". Domain of origin: "www.codetogether.com"
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-02 14:32:40.845
+!MESSAGE ex-0000000066 Cookie rejected [_cfuvid="3uirmIjOiHfqGEURud.e9wMq7lv2mbLTILn5RLdlDgs-1756798360765-0.0.1.1-604800000", domain:cdn.webflow.com, path:/, expiry:null] Illegal 'domain' attribute "cdn.webflow.com". Domain of origin: "www.codetogether.com"
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-02 14:33:21.300
+!MESSAGE ex-0000000094 Cookie rejected [_cfuvid="NGd_6z3AEXAYkzjyl0JefGhZUptF4AwdCb305znHn_s-1756798401254-0.0.1.1-604800000", domain:cdn.webflow.com, path:/, expiry:null] Illegal 'domain' attribute "cdn.webflow.com". Domain of origin: "www.codetogether.com"
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-02 14:33:22.528
+!MESSAGE ex-0000000095 Cookie rejected [_cfuvid="INgsC3xUZlF_u27gl7LEF6MG8mZZcpUwZOynVvs2c2w-1756798402521-0.0.1.1-604800000", domain:cdn.webflow.com, path:/, expiry:null] Illegal 'domain' attribute "cdn.webflow.com". Domain of origin: "www.codetogether.com"
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2025-09-02 14:35:27.387
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.copilot.eclipse.ui,0.11.0.202508291001 from repository https://azuredownloads-g3ahgwb5b8bkbxhd.b01.azurefd.net/github-copilot/.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2025-09-02 14:35:27.387
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.copilot.eclipse.terminal.api,0.11.0.202508291001 from repository https://azuredownloads-g3ahgwb5b8bkbxhd.b01.azurefd.net/github-copilot/.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2025-09-02 14:35:27.387
+!MESSAGE No digest algorithm is available to verify download of org.eclipse.update.feature,com.microsoft.copilot.eclipse.feature,0.11.0.202508291001 from repository https://azuredownloads-g3ahgwb5b8bkbxhd.b01.azurefd.net/github-copilot/.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2025-09-02 14:35:27.387
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.copilot.eclipse.branding,0.11.0.202508291001 from repository https://azuredownloads-g3ahgwb5b8bkbxhd.b01.azurefd.net/github-copilot/.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2025-09-02 14:35:27.387
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.copilot.eclipse.core,0.11.0.202508291001 from repository https://azuredownloads-g3ahgwb5b8bkbxhd.b01.azurefd.net/github-copilot/.
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2025-09-02 14:35:27.387
+!MESSAGE No digest algorithm is available to verify download of osgi.bundle,com.microsoft.copilot.eclipse.core.agent.macosx.aarch64,0.11.0.202508291001 from repository https://azuredownloads-g3ahgwb5b8bkbxhd.b01.azurefd.net/github-copilot/.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-02 14:39:47.497
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-02 14:39:47.498
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/mockito-junit-lab9/pom.xml
+
+!ENTRY org.eclipse.core.resources 4 2 2025-09-02 14:39:47.934
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.internal.MavenPluginActivator.getBundleContext()" because the return value of "org.eclipse.m2e.core.internal.MavenPluginActivator.getDefault()" is null
+	at org.eclipse.m2e.core.internal.markers.MarkerUtils.decorateMarker(MarkerUtils.java:41)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addErrorMarker(MavenMarkerManager.java:329)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addErrorMarkers(MavenMarkerManager.java:312)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addMarkers(MavenMarkerManager.java:86)
+	at org.eclipse.m2e.core.internal.project.registry.DefaultMavenDependencyResolver.resolveProjectDependencies(DefaultMavenDependencyResolver.java:73)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:579)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$5(ProjectRegistryManager.java:487)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:485)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1081)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:442)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:445)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:556)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:504)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:586)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2025-09-02 14:39:47.935
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.springsource.ide.eclipse.commons.livexp.core.LiveSetVariable.getValue()" because "this.this$0.applications" is null
+	at org.springframework.ide.eclipse.boot.dash.model.LocalBootDashModel$4.resourceChanged(LocalBootDashModel.java:201)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:451)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:210)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2025-09-02 14:39:47.935
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.m2e.core 4 75 2025-09-02 14:39:47.935
+!MESSAGE Errors running builder 'Maven Project Builder' on project 'mockito-junit-lab9'.
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.m2e.core.internal.MavenPluginActivator.getBundleContext()" because the return value of "org.eclipse.m2e.core.internal.MavenPluginActivator.getDefault()" is null
+	at org.eclipse.m2e.core.internal.markers.MarkerUtils.decorateMarker(MarkerUtils.java:41)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addErrorMarker(MavenMarkerManager.java:329)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addErrorMarkers(MavenMarkerManager.java:312)
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addMarkers(MavenMarkerManager.java:86)
+	at org.eclipse.m2e.core.internal.project.registry.DefaultMavenDependencyResolver.resolveProjectDependencies(DefaultMavenDependencyResolver.java:73)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:579)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$5(ProjectRegistryManager.java:487)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:485)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:322)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1081)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:442)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:445)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:556)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:504)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:586)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-09-02 14:39:49.747 -----------------------------------------------
+eclipse.buildId=4.37.0.20250828-0648
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_TH
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/kriangkrai/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.java.product -keyring /Users/kriangkrai/.eclipse_keyring -data file:/Users/kriangkrai/eclipse-workspace/SQA/
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-09-02 14:39:51.438
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (1322) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-02 14:39:51.534
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.apache.felix.scr 4 0 2025-09-02 14:39:52.788
+!MESSAGE bundle org.apache.felix.scr:2.2.12 (581) Circular reference detected trying to get service {org.eclipse.m2e.core.project.IMavenProjectChangedListener}={service.id=256, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.WorkspaceStateWriter, component.id=41}
+ stack of references: ServiceReference: {org.eclipse.m2e.core.project.IMavenProjectChangedListener}={service.id=256, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.WorkspaceStateWriter, component.id=41}
+ServiceReference: {org.eclipse.m2e.core.project.IMavenProjectRegistry}={service.id=249, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.registry.MavenProjectManager, component.id=44}
+    Dependency: DependencyManager: Component [Component: org.eclipse.m2e.core.embedder.MavenModelManager (29)] reference [projectManager]
+
+!STACK 0
+java.lang.Exception: stack trace
+	at org.apache.felix.scr.impl.ComponentRegistry.enterCreate(ComponentRegistry.java:493)
+	at org.apache.felix.scr.impl.BundleComponentActivator.enterCreate(BundleComponentActivator.java:735)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:229)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:226)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:120)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:588)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:590)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:666)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.inject.methods.BindMethod.getServiceObject(BindMethod.java:675)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2625)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.prebind(DependencyManager.java:441)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1843)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1060)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:920)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:229)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:226)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:120)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:588)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:590)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:666)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.inject.field.FieldHandler$ReferenceMethodImpl.getServiceObject(FieldHandler.java:552)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2625)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.prebind(DependencyManager.java:1414)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1843)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1060)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:776)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1287)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1238)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1232)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1152)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:959)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:895)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1184)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:117)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:134)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:988)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:999)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:933)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:146)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:321)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:495)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:929)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:915)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:133)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:984)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:752)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1287)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1238)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1232)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1152)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:959)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:895)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1184)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:117)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:134)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:988)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:999)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:933)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:146)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:321)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:495)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:515)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:1068)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:595)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:257)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:184)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:565)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:826)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:768)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1066)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:394)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:643)
+	at org.eclipse.osgi.container.Module.start(Module.java:500)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:528)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:622)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:353)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:521)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:438)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:195)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:186)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.apache.felix.scr 4 0 2025-09-02 14:39:52.791
+!MESSAGE bundle org.apache.felix.scr:2.2.12 (581) Circular reference detected trying to get service {org.eclipse.m2e.core.project.IMavenProjectChangedListener}={service.id=256, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.WorkspaceStateWriter, component.id=41}
+ stack of references: ServiceReference: {org.eclipse.m2e.core.project.IMavenProjectChangedListener}={service.id=256, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.WorkspaceStateWriter, component.id=41}
+    Dependency: DependencyManager: Component [Component: org.eclipse.m2e.core.internal.project.registry.MavenProjectManager (44)] reference [MavenProjectChangedListener]
+ServiceReference: {org.eclipse.m2e.core.project.IMavenProjectRegistry}={service.id=249, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.registry.MavenProjectManager, component.id=44}
+    Dependency: DependencyManager: Component [Component: org.eclipse.m2e.core.embedder.MavenModelManager (29)] reference [projectManager]
+    Dependency: DependencyManager: Component [Component: org.eclipse.m2e.core.embedder.MavenModelManager (29)] reference [projectManager]
+ServiceReference: {org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager}={service.id=247, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager, component.id=46}
+
+!STACK 0
+java.lang.Exception: stack trace
+	at org.apache.felix.scr.impl.ComponentRegistry.enterCreate(ComponentRegistry.java:493)
+	at org.apache.felix.scr.impl.BundleComponentActivator.enterCreate(BundleComponentActivator.java:735)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:229)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:226)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:120)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:588)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:590)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:666)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.inject.methods.BindMethod.getServiceObject(BindMethod.java:675)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2625)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.prebind(DependencyManager.java:441)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1843)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1060)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:920)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:229)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:226)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:120)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:588)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:590)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:666)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.inject.field.FieldHandler$ReferenceMethodImpl.getServiceObject(FieldHandler.java:552)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2625)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.prebind(DependencyManager.java:1414)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1843)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1060)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:920)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:229)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:226)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:120)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:588)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:590)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:666)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.inject.field.FieldHandler$ReferenceMethodImpl.getServiceObject(FieldHandler.java:552)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2625)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.prebind(DependencyManager.java:1414)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1843)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1060)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:776)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1287)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1238)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1232)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1152)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:959)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:895)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1184)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:117)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:134)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:988)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:999)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:933)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:146)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:321)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:495)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:929)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:915)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:133)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:984)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:752)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1287)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1238)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1232)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1152)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:959)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:895)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1184)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:117)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:134)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:988)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:999)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:933)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:146)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:321)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:495)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:515)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:1068)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:595)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:257)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:184)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:565)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:826)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:768)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1066)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:394)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:643)
+	at org.eclipse.osgi.container.Module.start(Module.java:500)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:528)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:622)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:353)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:521)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:438)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:195)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:186)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-02 14:39:52.941
+!MESSAGE Logback config file: /Users/kriangkrai/eclipse-workspace/SQA/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-09-02 14:39:53.055
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-02 14:39:53.055
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-09-02 14:39:53.276
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-02 14:39:53.276
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.debug.ui 4 120 2025-09-02 14:39:54.976
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 2; The content of elements must consist of well-formed character data or markup.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2598)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2688)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:635)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:551)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:890)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:826)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:134)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.restoreLaunchHistory(LaunchConfigurationManager.java:497)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.loadLaunchHistories(LaunchConfigurationManager.java:1053)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getLaunchHistory(LaunchConfigurationManager.java:1025)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.internalGetHistory(AbstractLaunchHistoryAction.java:545)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.getToolTip(AbstractLaunchHistoryAction.java:237)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:507)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1460)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2036)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:189)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-02 14:39:56.118
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-02 14:39:56.118
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-02 14:39:56.118
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-02 14:39:56.118
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-02 14:39:56.120
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-02 14:39:56.121
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-02 14:39:56.462
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-02 14:39:56.463
+!MESSAGE [Info] Found native binary in fragment bundle: com.microsoft.copilot.eclipse.core.agent.macosx.aarch64
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2025-09-02 14:39:56.702
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.tm.terminal.view.ui.TerminalsView" id and the "Terminal" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2025-09-02 14:39:56.702
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.tcf.te.ui.terminals.TerminalsView" id and the "Terminals (Old)" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-02 14:39:58.233
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-02 14:39:58.432
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-02 14:39:58.435
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.genuitec.eclipse.codetogether.ui 1 0 2025-09-02 14:39:58.661
+!MESSAGE Proxies not enabled
+
+!ENTRY com.genuitec.eclipse.codetogether.ui 1 0 2025-09-02 14:39:58.661
+!MESSAGE No proxy data found for url: https://live.codetogether.io/ct-url
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 14:39:59.517
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.363.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-02 14:39:59.684
+!MESSAGE [Info]	[certificates] Removed 12 expired certificates
+
+!ENTRY org.eclipse.jface 2 0 2025-09-02 14:40:41.083
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-09-02 14:40:41.083
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-02 14:41:03.896
+!MESSAGE [Info] Language ID not found for extension: xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-02 14:50:53.885
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-02 14:50:53.885
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/mockito-junit-lab9/pom.xml
+!SESSION 2025-09-08 19:43:03.309 -----------------------------------------------
+eclipse.buildId=4.37.0.20250828-0648
+java.version=23.0.2
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_TH
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/kriangkrai/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.java.product -keyring /Users/kriangkrai/.eclipse_keyring
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-09-08 19:43:05.104
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.31.0 (1322) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-08 19:43:05.211
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.apache.felix.scr 4 0 2025-09-08 19:43:23.999
+!MESSAGE bundle org.apache.felix.scr:2.2.12 (581) Circular reference detected trying to get service {org.eclipse.m2e.core.project.IMavenProjectChangedListener}={service.id=256, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.WorkspaceStateWriter, component.id=41}
+ stack of references: ServiceReference: {org.eclipse.m2e.core.project.IMavenProjectChangedListener}={service.id=256, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.WorkspaceStateWriter, component.id=41}
+ServiceReference: {org.eclipse.m2e.core.project.IMavenProjectRegistry}={service.id=249, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.registry.MavenProjectManager, component.id=44}
+    Dependency: DependencyManager: Component [Component: org.eclipse.m2e.core.embedder.MavenModelManager (29)] reference [projectManager]
+
+!STACK 0
+java.lang.Exception: stack trace
+	at org.apache.felix.scr.impl.ComponentRegistry.enterCreate(ComponentRegistry.java:493)
+	at org.apache.felix.scr.impl.BundleComponentActivator.enterCreate(BundleComponentActivator.java:735)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:229)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:226)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:120)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:588)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:590)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:666)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.inject.methods.BindMethod.getServiceObject(BindMethod.java:675)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2625)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.prebind(DependencyManager.java:441)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1843)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1060)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:920)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:229)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:226)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:120)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:588)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:590)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:666)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.inject.field.FieldHandler$ReferenceMethodImpl.getServiceObject(FieldHandler.java:552)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2625)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.prebind(DependencyManager.java:1414)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1843)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1060)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:776)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1287)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1238)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1232)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1152)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:959)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:895)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1184)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:117)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:134)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:988)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:999)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:933)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:146)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:321)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:495)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:929)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:915)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:133)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:984)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:752)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1287)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1238)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1232)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1152)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:959)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:895)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1184)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:117)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:134)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:988)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:999)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:933)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:146)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:321)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:495)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:515)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:1068)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:595)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:257)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:184)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:565)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:826)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:768)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1066)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:394)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:643)
+	at org.eclipse.osgi.container.Module.start(Module.java:500)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:528)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:622)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:353)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:521)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:438)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:195)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:186)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY org.apache.felix.scr 4 0 2025-09-08 19:43:24.003
+!MESSAGE bundle org.apache.felix.scr:2.2.12 (581) Circular reference detected trying to get service {org.eclipse.m2e.core.project.IMavenProjectChangedListener}={service.id=256, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.WorkspaceStateWriter, component.id=41}
+ stack of references: ServiceReference: {org.eclipse.m2e.core.project.IMavenProjectChangedListener}={service.id=256, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.WorkspaceStateWriter, component.id=41}
+    Dependency: DependencyManager: Component [Component: org.eclipse.m2e.core.internal.project.registry.MavenProjectManager (44)] reference [MavenProjectChangedListener]
+ServiceReference: {org.eclipse.m2e.core.project.IMavenProjectRegistry}={service.id=249, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.registry.MavenProjectManager, component.id=44}
+    Dependency: DependencyManager: Component [Component: org.eclipse.m2e.core.embedder.MavenModelManager (29)] reference [projectManager]
+    Dependency: DependencyManager: Component [Component: org.eclipse.m2e.core.embedder.MavenModelManager (29)] reference [projectManager]
+ServiceReference: {org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager}={service.id=247, service.bundleid=807, service.scope=bundle, osgi.ds.satisfying.condition.target=(osgi.condition.id=true), component.name=org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager, component.id=46}
+
+!STACK 0
+java.lang.Exception: stack trace
+	at org.apache.felix.scr.impl.ComponentRegistry.enterCreate(ComponentRegistry.java:493)
+	at org.apache.felix.scr.impl.BundleComponentActivator.enterCreate(BundleComponentActivator.java:735)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:229)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:226)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:120)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:588)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:590)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:666)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.inject.methods.BindMethod.getServiceObject(BindMethod.java:675)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2625)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.prebind(DependencyManager.java:441)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1843)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1060)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:920)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:229)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:226)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:120)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:588)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:590)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:666)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.inject.field.FieldHandler$ReferenceMethodImpl.getServiceObject(FieldHandler.java:552)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2625)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.prebind(DependencyManager.java:1414)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1843)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1060)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:920)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:229)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:226)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:120)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:588)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:590)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:666)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:88)
+	at org.apache.felix.scr.impl.inject.field.FieldHandler$ReferenceMethodImpl.getServiceObject(FieldHandler.java:552)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2625)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.prebind(DependencyManager.java:1414)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1843)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1060)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:776)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1287)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1238)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1232)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1152)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:959)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:895)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1184)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:117)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:134)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:988)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:999)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:933)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:146)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:321)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:495)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:929)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:915)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:133)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:984)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:752)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1287)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1238)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1232)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1152)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:959)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:895)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1184)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:117)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:134)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:988)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:999)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:933)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:146)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:321)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:495)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:515)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:1068)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:595)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:257)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:184)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:565)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:826)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:768)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1066)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:394)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:643)
+	at org.eclipse.osgi.container.Module.start(Module.java:500)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:528)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:622)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:353)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:521)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:438)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:195)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:186)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-08 19:43:24.115
+!MESSAGE Logback config file: /Users/kriangkrai/eclipse-workspace/SQA/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-09-08 19:43:24.243
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-08 19:43:24.243
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-09-08 19:43:24.340
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-09-08 19:43:24.340
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.debug.ui 4 120 2025-09-08 19:43:25.668
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 2; The content of elements must consist of well-formed character data or markup.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2598)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2688)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:635)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:551)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:890)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:826)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:134)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:247)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:342)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.restoreLaunchHistory(LaunchConfigurationManager.java:497)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.loadLaunchHistories(LaunchConfigurationManager.java:1053)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getLaunchHistory(LaunchConfigurationManager.java:1025)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.internalGetHistory(AbstractLaunchHistoryAction.java:545)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.getToolTip(AbstractLaunchHistoryAction.java:237)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:507)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1460)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2036)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:189)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-08 19:43:26.806
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-08 19:43:26.807
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-08 19:43:26.807
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-08 19:43:26.807
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-08 19:43:26.808
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-08 19:43:26.809
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 19:43:27.168
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 19:43:27.168
+!MESSAGE [Info] Found native binary in fragment bundle: com.microsoft.copilot.eclipse.core.agent.macosx.aarch64
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 19:43:28.414
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY com.genuitec.eclipse.codetogether.ui 1 0 2025-09-08 19:43:29.360
+!MESSAGE Proxies not enabled
+
+!ENTRY com.genuitec.eclipse.codetogether.ui 1 0 2025-09-08 19:43:29.360
+!MESSAGE No proxy data found for url: https://live.codetogether.io/ct-url
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 19:43:29.994
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.363.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 19:43:30.136
+!MESSAGE [Info]	[certificates] Removed 12 expired certificates
+
+!ENTRY org.eclipse.jface 2 0 2025-09-08 19:43:37.821
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-09-08 19:43:37.821
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:02:02.520
+!MESSAGE [Info]	[fetchChat] Request 9223520b-9847-413d-be0a-ff075e7e9843 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 458.7201660000719ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:02:02.569
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:02:03.868
+!MESSAGE [Info]	[fetchChat] Request d7d13593-f8d8-4cfd-acf4-48124d1169f1 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1282.0230420001317ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:02:38.221
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:02:38.774
+!MESSAGE [Info]	[fetchChat] Request 289faaa1-3e9d-4d58-ba1a-a7cafd404af3 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 586.7457080001477ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:02:38.914
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 20:04:29.626
+!MESSAGE [Info] Language ID not found for extension: xml
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:04:30.174
+!MESSAGE [Info]	[fetchCompletions] Request efaa6a40-a0ff-48ef-b78d-334f544992b8 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 538.316208000062ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:04:30.176
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:04:32.560
+!MESSAGE [Info]	[fetchCompletions] Request 1c8b49d3-7d7e-4abf-bac0-79a151201203 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 202.05295799998567ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:04:32.561
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:04:54.621
+!MESSAGE [Info]	[fetchCompletions] Request 99a7e037-238f-4e3e-a439-bbe90821cdae at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 210.6435000000056ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:04:54.622
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:04:59.268
+!MESSAGE [Info]	[fetchCompletions] Request 3b8cd918-2b3e-42ae-a951-f7fbf53abccd at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 206.0442500000354ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:04:59.388
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:04:59.623
+!MESSAGE [Info]	[fetchCompletions] Request 28049e87-6f8b-4306-95cc-efdebaf1e04b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 205.9874579999596ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:04:59.659
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:05:02.988
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:05:02.992
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-09-08 20:05:12.384
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-09-08 20:05:13.391
+!MESSAGE Could not get hover information due to timeout after 1000 milliseconds
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:05:44.276
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:05:44.278
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:07:56.717
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:07:56.718
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:05.456
+!MESSAGE [Info]	[default] Context provider relatedFilesShim exceeded time budget of 150ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:05.916
+!MESSAGE [Info]	[fetchCompletions] Request 0382d537-2fbc-416f-9104-76d1c7987bff at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 455.4576250000391ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:05.919
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:13.126
+!MESSAGE [Info]	[fetchCompletions] Request c588d687-4e6d-459f-bdea-d3a48cb6ad52 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 216.70583299989812ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:13.180
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:13.412
+!MESSAGE [Info]	[fetchCompletions] Request 4776442d-b4c9-4e50-84ef-873936cf4646 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 212.12541600014083ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:13.449
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:14.295
+!MESSAGE [Info]	[fetchCompletions] Request 190c9e87-7068-43e5-a133-5e9b70424fcb at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 255.99974999995902ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:14.389
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:14.589
+!MESSAGE [Info]	[fetchCompletions] Request 24f9a0dd-c50c-4c62-a604-7e7a1f52ff12 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 194.4350409999024ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:14.627
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:16.037
+!MESSAGE [Info]	[fetchCompletions] Request dbb90583-932b-4fa4-bf23-0ca1bd68bec4 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 201.6903750000056ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:16.088
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:16.314
+!MESSAGE [Info]	[fetchCompletions] Request 91412ae6-db99-4e71-99be-a8a902cae0ba at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 212.3008339998778ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:16.355
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:16.903
+!MESSAGE [Info]	[fetchCompletions] Request 7a8fe987-43a9-4201-b83e-8da672ddb691 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 203.2077500000596ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:16.942
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:17.167
+!MESSAGE [Info]	[fetchCompletions] Request 417ce814-38a9-4ea7-a0ce-10afbc448f2f at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 209.13958399998955ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:17.213
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:17.895
+!MESSAGE [Info]	[fetchCompletions] Request fba30310-9b0e-4951-91b9-1892448c0769 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 212.02212499990128ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:17.933
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:18.167
+!MESSAGE [Info]	[fetchCompletions] Request 46c5fc0e-b729-4627-b685-5a3f247979ae at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 225.54845899995416ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:18.201
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:18.444
+!MESSAGE [Info]	[fetchCompletions] Request bd8bd463-25d7-48d7-9208-e132c9538b31 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 214.45487500005402ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:18.488
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:18.856
+!MESSAGE [Info]	[fetchCompletions] Request 7f1b76d5-8054-4918-bb3b-c99da5ce556b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 215.46095800003968ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:18.895
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:19.209
+!MESSAGE [Info]	[fetchCompletions] Request f1e3e217-b46f-4adf-a8dc-772152f6ca0d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 205.6941250001546ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:19.246
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:19.447
+!MESSAGE [Info]	[fetchCompletions] Request c88290fa-62a5-45e4-a9e1-81fdf9407cd1 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 195.72520800004713ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:19.491
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:20.412
+!MESSAGE [Info]	[fetchCompletions] Request 64dfa5e9-cf7a-4afe-bcef-a1852f232bf3 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 224.88820800022222ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:20.454
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:20.692
+!MESSAGE [Info]	[fetchCompletions] Request dd4ca868-ae1c-42de-8459-35a463d58a67 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 203.9508340000175ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:20.731
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:25.045
+!MESSAGE [Info]	[fetchCompletions] Request 9daa29be-1ca5-4eb9-b2ee-68774adc015e at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 206.2554999999702ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:25.094
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:25.312
+!MESSAGE [Info]	[fetchCompletions] Request 48732fd1-93e2-4303-85f0-cf1093fc74fc at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 202.35074999998324ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:25.353
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:26.392
+!MESSAGE [Info]	[fetchCompletions] Request f51350d1-b2f2-4e40-8e49-67f9032fb76b at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 206.85862499987707ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:26.479
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:26.860
+!MESSAGE [Info]	[fetchCompletions] Request e4ef3ff5-9ab9-4037-ab2e-72c7c394bab0 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 244.51041699992493ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:26.898
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:27.115
+!MESSAGE [Info]	[fetchCompletions] Request d97f046c-125f-47a3-a002-9d424f829ef5 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 207.69274999992922ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:27.161
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:27.588
+!MESSAGE [Info]	[fetchCompletions] Request bb49375f-41e0-434d-9166-c5e16f398465 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 209.5595420000609ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:27.628
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:27.863
+!MESSAGE [Info]	[fetchCompletions] Request 6928947b-4c78-4eaf-a7ae-76b5aaa5f8dc at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 226.4637919999659ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:27.905
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:28.111
+!MESSAGE [Info]	[fetchCompletions] Request 78a81d14-1770-4e69-bfe6-da1bd957913e at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 197.0451250001788ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:28.162
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:28.515
+!MESSAGE [Info]	[fetchCompletions] Request f4f5d824-ab33-4b2e-a37b-e3db0f29b359 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 206.65287499991246ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:28.562
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:28.851
+!MESSAGE [Info]	[fetchCompletions] Request 0fbfedfe-37ca-439d-b9aa-dbdeded55203 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 270.1504999999888ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:28.884
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:33.479
+!MESSAGE [Info]	[fetchCompletions] Request 16ac33d0-517d-48df-8559-151b52e37e90 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 208.50700000021607ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:33.522
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:33.728
+!MESSAGE [Info]	[fetchCompletions] Request f079b31d-5710-4c82-b85b-f5e22e5b1ce6 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 192.75054200016893ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-08 20:08:33.732
+!MESSAGE [Error]	[AsyncCompletionManager] [f079b31d-5710-4c82-b85b-f5e22e5b1ce6] Request errored with AbortError: The operation was aborted.
+    at EventTarget.abortHandler (/snapshot/copilot-client/node_modules/@adobe/helix-fetch/src/fetch/index.js:106:17)
+    at EventTarget.[nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+    at EventTarget.dispatchEvent (node:internal/event_target:766:26)
+    at abortSignal (node:internal/abort_controller:370:10)
+    at AbortController.abort (node:internal/abort_controller:392:5)
+    at /snapshot/copilot-client/lib/src/networking.ts:105:19
+    at W0e.invoke (/snapshot/copilot-client/node_modules/vscode-jsonrpc/lib/common/events.js:55:39)
+    at t.fire (/snapshot/copilot-client/node_modules/vscode-jsonrpc/lib/common/events.js:117:36)
+    at Jj.cancel (/snapshot/copilot-client/node_modules/vscode-jsonrpc/lib/common/cancellation.js:41:31)
+    at G0e.cancel (/snapshot/copilot-client/node_modules/vscode-jsonrpc/lib/common/cancellation.js:82:25) {
+  type: 'aborted',
+  _name: 'AbortError'
+}
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:33.939
+!MESSAGE [Info]	[fetchCompletions] Request 1e60f98e-688a-4bbd-bbb7-1ebef8b9bd11 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 206.198958999943ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:33.988
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:34.235
+!MESSAGE [Info]	[fetchCompletions] Request 2b05ea04-6463-4ad9-809b-d0843f45b5d8 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 229.13158300006762ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:34.274
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:35.748
+!MESSAGE [Info]	[fetchCompletions] Request fff522aa-42f5-4d71-a762-677f4094a640 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 206.3839999998454ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:35.801
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:36.112
+!MESSAGE [Info]	[fetchCompletions] Request 5ee12686-df19-4822-81c4-2e46f8c1f753 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 201.90170900011435ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:08:36.163
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:09:46.144
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:09:46.145
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:09:53.260
+!MESSAGE [Info]	[fetchCompletions] Request b63c51ea-5479-4b61-9201-39f025df6551 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 218.43983300006948ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:09:53.263
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:09:56.622
+!MESSAGE [Info]	[fetchCompletions] Request 714b10c4-2271-437b-8e44-f0af21ea17ae at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 204.7500829999335ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:09:56.747
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:09:56.972
+!MESSAGE [Info]	[fetchCompletions] Request c63b52c1-0eb3-4f4a-9e9f-b11ead64b47d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 204.6202499999199ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:09:57.009
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:10:57.572
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:10:57.573
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:11:01.274
+!MESSAGE [Info]	[fetchCompletions] Request 4f560154-ff17-433e-bf7c-a1ac2cbaa070 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 199.6112500000745ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:11:01.469
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:11:01.697
+!MESSAGE [Info]	[fetchCompletions] Request 58ef89eb-7618-4e87-bd19-582967e55d96 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 216.0281660000328ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:11:01.745
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:11:05.996
+!MESSAGE [Info]	[fetchCompletions] Request e638dbc7-047c-4d03-86ae-7faa0f8ba6a8 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 203.32616599998437ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:11:06.130
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:11:06.411
+!MESSAGE [Info]	[fetchCompletions] Request 9ad8bf0c-617d-4abe-b686-acf4ef18d2c8 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 266.5223340000957ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:11:06.452
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:12:20.487
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:12:20.488
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:12:27.039
+!MESSAGE [Info]	[fetchCompletions] Request 925e908b-3834-423b-8ca3-5064185b26e8 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 203.20183299994096ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:12:27.220
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:12:27.431
+!MESSAGE [Info]	[fetchCompletions] Request 256bcf5b-3713-4d9f-9024-33bf240c88f2 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 191.6149999999907ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:12:27.496
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:12:30.972
+!MESSAGE [Info]	[fetchCompletions] Request 035732bb-128d-41d5-b6fe-9ba272711b31 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 209.67037499998696ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:12:31.127
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:12:31.380
+!MESSAGE [Info]	[fetchCompletions] Request 88256c20-1dff-488a-8431-f65175811f1c at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 237.13916700007394ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:12:31.437
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:20:45.643
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:20:45.644
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:20:52.935
+!MESSAGE [Info]	[fetchCompletions] Request 84a6952a-8e6a-421e-9c6d-ce4474257f71 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 501.975082999561ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:20:53.048
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [content_filter]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:21:37.492
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:21:37.493
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:21:41.735
+!MESSAGE [Info]	[fetchCompletions] Request 02f3c916-33e2-4bf1-82e8-7ff3f0156ada at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 292.6597919999622ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:21:42.094
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:21:42.359
+!MESSAGE [Info]	[fetchCompletions] Request be1d4ae0-1b5c-4aae-b0bd-2754d38cb890 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 242.99654200021178ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:21:42.413
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [null]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:21:49.234
+!MESSAGE [Info]	[fetchCompletions] Request d679ffca-997c-456f-abb0-713abc6df57d at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 235.6549999997951ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:21:49.440
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [content_filter]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:21:49.683
+!MESSAGE [Info]	[fetchCompletions] Request 55352a34-2e02-4cf2-bc87-8d5c91b7972e at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 222.22679200023413ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:21:49.723
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:21:56.975
+!MESSAGE [Info]	[fetchCompletions] Request 933e25f8-074b-43d3-b754-6ee5bea5e5d5 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 239.8124170000665ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:21:56.976
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:22:12.061
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:22:12.061
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
