@@ -8210,3 +8210,111 @@ Binding(COMMAND+SHIFT+T,
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:22:12.061
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:29:35.531
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:29:35.533
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:29:57.203
+!MESSAGE [Info]	[fetchChat] Request 91fd1f9e-8b4a-47b8-a86e-f56aae1225f7 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 1695.4247920000926ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:29:57.515
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:30:00.958
+!MESSAGE [Info]	[fetchChat] Request fb1db047-c771-49de-998c-562e3654727e at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 3421.6110419998877ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:30:43.145
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:30:43.684
+!MESSAGE [Info]	[fetchChat] Request 4bf000fa-ec84-408c-b22b-63052c59c93a at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 580.5863330001011ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:30:43.872
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:31:52.464
+!MESSAGE [Info]	[fetchChat] Request 5443e183-4f8e-44c6-a708-7e09a720d7b2 at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 577.863209000323ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:31:52.651
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:31:54.816
+!MESSAGE [Info]	[fetchChat] Request 735f8b6a-9644-497a-96df-927bf6769d3f at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 2144.52883400023ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:32:06.988
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:32:07.685
+!MESSAGE [Info]	[fetchChat] Request a41c2bba-f312-494e-b315-d050bbd3aa6a at <https://api.individual.githubcopilot.com/chat/completions> finished with 200 status after 739.5344589999877ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:32:07.849
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:32:34.535
+!MESSAGE [Info]	[fetchCompletions] Request 560a6f91-4e9b-4dec-a4d3-4f99580b602e at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 476.9536249996163ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:32:34.536
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:32:37.629
+!MESSAGE [Info]	[fetchCompletions] Request f1da7cd6-6d84-404a-9066-e6662ed51ef4 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 209.8819590001367ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:32:38.189
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:32:38.412
+!MESSAGE [Info]	[fetchCompletions] Request e5151e9c-588d-4f77-afb4-fffd914d0ef0 at <https://proxy.individual.githubcopilot.com/v1/engines/gpt-41-copilot/completions> finished with 200 status after 198.85250000003725ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-09-08 20:32:38.455
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:32:59.661
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-09-08 20:32:59.663
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 20:33:41.675
+!MESSAGE [Info] Document is null for editor: Movie.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 20:33:41.676
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/mockito-junit-lab9/src/main/java/com/sqa/lab9/model/Movie.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 20:33:41.686
+!MESSAGE [Info] Document is null for editor: MovieService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 20:33:41.686
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/mockito-junit-lab9/src/main/java/com/sqa/lab9/service/MovieService.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 20:33:41.695
+!MESSAGE [Info] Document is null for editor: FavoriteMovie.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 20:33:41.695
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/mockito-junit-lab9/src/main/java/com/sqa/lab9/core/FavoriteMovie.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 20:33:41.704
+!MESSAGE [Info] Document is null for editor: MovieServiceStub.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 20:33:41.704
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/mockito-junit-lab9/src/test/java/com/sqa/lab9/stub/MovieServiceStub.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 20:33:41.712
+!MESSAGE [Info] Document is null for editor: FavoriteMovieStubTest.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 20:33:41.712
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/mockito-junit-lab9/src/test/java/com/sqa/lab9/test/FavoriteMovieStubTest.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 20:33:41.721
+!MESSAGE [Info] Document is null for editor: FavoriteMovieMockTest.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 20:33:41.721
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/mockito-junit-lab9/src/test/java/com/sqa/lab9/test/FavoriteMovieMockTest.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 20:33:41.742
+!MESSAGE [Info] Document is null for editor: pom.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-09-08 20:33:41.743
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/mockito-junit-lab9/pom.xml
