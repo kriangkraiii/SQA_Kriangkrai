@@ -7,7 +7,7 @@
 <body>
 	<div>
 		<h1>Event Registration</h1>
-		<form name="myform" onsubmit="return validation();" action="Success.html">
+		<form name="myform" onsubmit="return validation();" action="Success.html" method="POST">
 			<input type="text" id="firstname" name="firstname" placeholder="First Name"/>
 			<input type="text" id="lastname" name="lastname" placeholder="Last Name"/>
 			<input type="text" id="organization" name="organization" placeholder="Organization"/>
@@ -26,38 +26,37 @@
 		var email = document.myform.email.value;
 		var phone = document.myform.phone.value;
 		
+		// ล้างข้อความ error ก่อน
+		document.getElementById('errors').innerHTML = "";
+		
 		if (firstname == "" && lastname == "") {
-     	document.getElementById('errors').innerHTML="*Please enter your name!!";
-     	return false;
- 		} else if (firstname == "") {
- 			document.getElementById('errors').innerHTML="*Please enter your first name!!";
-     	return false;
+			document.getElementById('errors').innerHTML="*Please enter your name!!";
+			return false;
+		} else if (firstname == "") {
+			document.getElementById('errors').innerHTML="*Please enter your first name!!";
+			return false;
 		} else if (lastname == "") {
- 			document.getElementById('errors').innerHTML="*Please enter your last name!!";
-     	return false;
- 		} else if (email == "") {
- 			document.getElementById('errors').innerHTML="*Please enter your email!!";
- 			return false;
- 		} else if (phone == "") {
- 			document.getElementById('errors').innerHTML="*Please enter your phone number!!";
- 			return false;
- 		}
-		else if (phone){
-			/* is correct
-			XXX-XXX-XXXX
-			XXX.XXX.XXXX
-			XXX XXX XXXX 
-			*/
-			var pattern  = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+			document.getElementById('errors').innerHTML="*Please enter your last name!!";
+			return false;
+		} else if (email == "") {
+			document.getElementById('errors').innerHTML="*Please enter your email!!";
+			return false;
+		} else if (phone == "") {
+			document.getElementById('errors').innerHTML="*Please enter your phone number!!";
+			return false;
+		} else if (phone) {
+			var pattern = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 			if (phone.match(pattern)) {
-			     return true;
-		    } else {
+				return true;
+			} else {
 				document.getElementById('errors').innerHTML="Please enter a valid phone number!!";
 				return false;
-		    }
-	    }
-}		
+			}
+		}
+		return true;
+	}		
 </script>
+
 <style>
 body {
   font-family: Arial;
@@ -65,6 +64,8 @@ body {
 }
 #errors {
 	text-align: right;
+	color: red;
+	font-size: 14px;
 }
 h1 {
 	color: #00BCD4;
