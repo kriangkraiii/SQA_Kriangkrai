@@ -1,0 +1,43 @@
+src/main/UserWhiteboard.java:3:	CommentRequired:	CommentRequired: Class comments are required
+src/main/UserWhiteboard.java:5:	CommentRequired:	CommentRequired: Field comments are required
+src/main/UserWhiteboard.java:6:	CommentRequired:	CommentRequired: Field comments are required
+src/main/UserWhiteboard.java:8:	CommentRequired:	CommentRequired: Protected method constructor comments are required
+src/main/UserWhiteboard.java:8:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'userId' is not assigned and could be declared final
+src/main/UserWhiteboard.java:11:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/UserWhiteboard.java:18:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/UserWhiteboard.java:18:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'text' is not assigned and could be declared final
+src/main/UserWhiteboard.java:20:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/Whiteboard.java:3:	CommentRequired:	CommentRequired: Class comments are required
+src/main/Whiteboard.java:3:	UseUtilityClass:	UseUtilityClass: All methods are static. Consider adding a private no-args constructor to prevent instantiation.
+src/main/Whiteboard.java:5:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/Whiteboard.java:7:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'managerA' could be declared final
+src/main/Whiteboard.java:8:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'managerB' could be declared final
+src/main/Whiteboard.java:10:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/Whiteboard.java:11:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/Whiteboard.java:12:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/Whiteboard.java:13:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/main/Whiteboard.java:14:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/Whiteboard.java:17:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'userId1' could be declared final
+src/main/Whiteboard.java:18:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'userId2' could be declared final
+src/main/Whiteboard.java:20:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/Whiteboard.java:22:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'aliceWb1' could be declared final
+src/main/Whiteboard.java:25:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'bobWb' could be declared final
+src/main/Whiteboard.java:28:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'aliceWb2' could be declared final
+src/main/Whiteboard.java:32:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/Whiteboard.java:34:	CompareObjectsWithEquals:	CompareObjectsWithEquals: Use equals() to compare object references.
+src/main/Whiteboard.java:34:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/Whiteboard.java:35:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/Whiteboard.java:36:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/Whiteboard.java:37:	CompareObjectsWithEquals:	CompareObjectsWithEquals: Use equals() to compare object references.
+src/main/Whiteboard.java:37:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/Whiteboard.java:40:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/Whiteboard.java:41:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/Whiteboard.java:42:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/Whiteboard.java:44:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/WhiteboardManager.java:6:	CommentRequired:	CommentRequired: Class comments are required
+src/main/WhiteboardManager.java:8:	CommentRequired:	CommentRequired: Field comments are required
+src/main/WhiteboardManager.java:20:	CommentRequired:	CommentRequired: Field comments are required
+src/main/WhiteboardManager.java:20:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/WhiteboardManager.java:22:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/WhiteboardManager.java:22:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'userId' is not assigned and could be declared final
+src/main/WhiteboardManager.java:29:	CommentRequired:	CommentRequired: Public method and constructor comments are required
