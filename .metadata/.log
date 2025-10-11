@@ -11717,3 +11717,51 @@ java.lang.Error: SWT Resource was not properly disposed
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.190
+!MESSAGE [Info] Document is null for editor: WhiteboardManager.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.191
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab12_SoftwareMetrics/Whiteboard/src/main/WhiteboardManager.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.201
+!MESSAGE [Info] Document is null for editor: Whiteboard.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.201
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab12_SoftwareMetrics/Whiteboard/src/main/Whiteboard.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.213
+!MESSAGE [Info] Document is null for editor: UserWhiteboard.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.213
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab12_SoftwareMetrics/Whiteboard/src/main/UserWhiteboard.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.224
+!MESSAGE [Info] Document is null for editor: pmd-report.txt
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.224
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab12_SoftwareMetrics/Whiteboard/reports/pmd-report.txt
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.233
+!MESSAGE [Info] Document is null for editor: WhiteboardManager.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.234
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab12_SoftwareMetrics/Whiteboard/src/main/WhiteboardManager.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.242
+!MESSAGE [Info] Document is null for editor: Whiteboard-cs-formatter.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.242
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab12_SoftwareMetrics/Whiteboard/Whiteboard-cs-formatter.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.250
+!MESSAGE [Info] Document is null for editor: Whiteboard-cs-cleanup.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.250
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab12_SoftwareMetrics/Whiteboard/Whiteboard-cs-cleanup.xml
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.261
+!MESSAGE [Info] Document is null for editor: Whiteboard.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2025-10-07 14:59:18.262
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/kriangkrai/eclipse-workspace/SQA/Assignment/Lab12_SoftwareMetrics/Whiteboard/src/main/Whiteboard.java
